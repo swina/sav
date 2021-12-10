@@ -1,7 +1,7 @@
 //v.2.6 build 100722
 
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 To use this component please contact sales@dhtmlx.com to obtain license
 */
 dataProcessor.prototype._o_init = dataProcessor.prototype.init;dataProcessor.prototype.init=function(obj){this._console=this._console||this._createConsole();this.attachEvent("onValidatationError",function(rowId){this._log("Validation error for ID="+(rowId||"[multiple]"));return true;});return this._o_init(obj);};dataProcessor.prototype._createConsole=function(){var c=document.createElement("DIV");c.style.cssText='width:450px;height:420px;overflow:auto;position:absolute;z-index:99999;background-color:white;top:0px;right:0px;border:1px dashed black;font-family:Tahoma;Font-size:10pt;';c.innerHTML="<div style='width:100%;background-color:gray;font-weight:bold;color:white;'><span style='cursor:pointer;float:right;' onclick='this.parentNode.parentNode.style.display=\"none\"'><sup>[close]&nbsp;</sup></span><span style='cursor:pointer;float:right;' onclick='this.parentNode.parentNode.childNodes[2].innerHTML=\"\"'><sup>[clear]&nbsp;</sup></span>&nbsp;DataProcessor</div><div style='width:100%;height:200px;overflow-Y:scroll;'>&nbsp;Current state</div><div style='width:100%;height:200px;overflow-Y:scroll;'>&nbsp;Log:</div>";if (document.body)document.body.insertBefore(c,document.body.firstChild);else dhtmlxEvent(window,"load",function(){document.body.insertBefore(c,document.body.firstChild);}) 
@@ -20,6 +20,6 @@ dataProcessor.prototype._o_init = dataProcessor.prototype.init;dataProcessor.pro
 //v.2.6 build 100722
 
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 To use this component please contact sales@dhtmlx.com to obtain license
 */

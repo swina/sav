@@ -50,7 +50,7 @@ function export_images($component,$skin){
 	define("YUI",true);
 
 $js_header="/*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 To use this library please contact sales@dhtmlx.com to obtain license
 */\n";
 	

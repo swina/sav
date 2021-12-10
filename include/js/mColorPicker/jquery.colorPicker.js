@@ -121,7 +121,7 @@
     }
   };
   
-  //converts RGB string to HEX - inspired by http://code.google.com/p/jquery-color-utils
+  //converts RGB string to HEX - inspired by https://code.google.com/p/jquery-color-utils
   toHex = function(color){
     //valid HEX code is entered
     if(color.match(/[0-9a-fA-F]{3}$/) || color.match(/[0-9a-fA-F]{6}$/)){

@@ -1,15 +1,15 @@
-﻿jQuery UI Authors (http://jqueryui.com/about)
+﻿jQuery UI Authors (https://jqueryui.com/about)
 
 This software consists of voluntary contributions made by many
 individuals. For exact contribution history, see the revision history
-and logs, available at http://github.com/jquery/jquery-ui
+and logs, available at https://github.com/jquery/jquery-ui
 
 Brandon Aaron
 Paul Bakaus (paulbakaus.com)
 David Bolter
 Rich Caloggero
 Chi Cheng (cloudream@gmail.com)
-Colin Clark (http://colin.atrc.utoronto.ca/)
+Colin Clark (https://colin.atrc.utoronto.ca/)
 Michelle D'Souza
 Aaron Eisenberger (aaronchi@gmail.com)
 Ariel Flesler

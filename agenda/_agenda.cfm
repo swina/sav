@@ -11,16 +11,16 @@
 	<script src="../include/dhtmlx/dhtmlxScheduler/codebase/ext/dhtmlxscheduler_agenda_view.js"></script>
    <link rel="stylesheet" href="../include/dhtmlx/dhtmlxScheduler/codebase/ext/dhtmlxscheduler_ext.css" type="text/css">
 	<script src="../include/dhtmlx/dhtmlxScheduler/codebase/ext/dhtmlxscheduler_serialize.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="jquery.ui.datepicker-it.js" type="text/javascript"></script>
-	<link type="text/css" href="http://vm3.indual.it/include/css/jquery.ui/css/overcast/jquery-ui-overcast.css" rel="stylesheet" />	
+	<link type="text/css" href="../include/css/jquery.ui/css/overcast/jquery-ui-overcast.css" rel="stylesheet" />	
 	<title>Agenda</title>
 </head>
 <cfinvoke component="agenda" method="events" returnvariable="rsEvents"></cfinvoke>
 <cfset session.agenda_test = rsEvents>
 <body>
-<div id="working" style="position:fixed;width:100%;height:100%;top:0px;left:0px;display:none;text-align:center;background:url(http://vm4.indual.it/sav/loading_2.gif) no-repeat center center;z-index:9999999999"></div>
+<div id="working" style="position:fixed;width:100%;height:100%;top:0px;left:0px;display:none;text-align:center;background:url(https://vm4.indual.it/sav/loading_2.gif) no-repeat center center;z-index:9999999999"></div>
 <div class="winhead" style="height:35px"> 
 <div style="float:left"><strong>Agenda</strong> &nbsp;</div><cfinclude template="_agendaFilter.cfm"></div>
 
@@ -163,7 +163,7 @@ $(document).ready(function(){
 		*/
 		$.ajax({
 			
-			url: "http://" + $('#url_host').val() + "/sav/agenda/agenda.cfc",
+			url: "https://" + $('#url_host').val() + "/sav/agenda/agenda.cfc",
 			type: 'GET',
 			data: {method: 'addAgendaEvent', returnFormat: 'plain', id_persona: user, dt_start: dstart, ora: ostart, ac_evento: evento, action: action, ora_end: oend},
 			//data:stringa,
@@ -189,7 +189,7 @@ $(document).ready(function(){
 		scheduler.deleteEvent(id);
 		scheduler.updateEvent(id);
 		$.ajax({
-			url: "http://"  + $('#url_host').val() + "/sav/agenda/agenda.cfc?method=deleteAgendaEvent",
+			url: "https://"  + $('#url_host').val() + "/sav/agenda/agenda.cfc?method=deleteAgendaEvent",
 			type: 'GET',
 			data:"id=" + id,
 	    	dataType: 'html',

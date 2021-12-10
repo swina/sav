@@ -4,7 +4,7 @@
 	<link rel='stylesheet' type='text/css' href='../include/css/style.css'>
 	<cfoutput>
 	<script type="text/javascript">
-    	var GB_ROOT_DIR = "http://#http_host#/sav/include/greybox/";
+    	var GB_ROOT_DIR = "https://#http_host#/sav/include/greybox/";
 	</script>
 	</cfoutput>
 	<script type="text/javascript" src="../include/greybox/AJS.js"></script>
@@ -38,8 +38,8 @@
 	<!--- <cfif remote_addr EQ "89.118.53.254"> --->
 		<link type="text/css" href="../include/css/sav.css" rel="stylesheet" />	
 		<link type="text/css" href="../include/css/jquery-ui-1.8.23.redmond/css/redmond/jquery-ui-1.8.23.custom.css" rel="stylesheet" />	
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
 	<!--- </cfif> --->
 	
 	<script src="../include/js/functions.js"></script>

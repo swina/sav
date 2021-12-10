@@ -1,7 +1,7 @@
 //v.2.6 build 100722
 
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 To use this component please contact sales@dhtmlx.com to obtain license
 */
 function dhtmlXContainer(obj) {

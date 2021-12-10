@@ -10,8 +10,8 @@
     <script src="../include/dhtmlx/dhtmlxLayout/codebase/dhtmlxcommon.js"></script>
     <script src="../include/dhtmlx/dhtmlxLayout/codebase/dhtmlxcontainer.js"></script>
     <script src="../include/dhtmlx/dhtmlxLayout/codebase/dhtmlxlayout.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
 	<script language="JavaScript" type="text/javascript">
 function doOnLoad(){
 var dhxLayout=new dhtmlXLayoutObject(document.body,"3L");

@@ -32,7 +32,7 @@
 		returntype="boolean"
 		output="false"
 		hint="Fires when the application is first created.">
-		<cfset application.dhtmlxurl = "http://#http_host#/sav/include/dhtmlx">
+		<cfset application.dhtmlxurl = "https://#http_host#/sav/include/dhtmlx">
 		<cfset application.dsn = "savenergy">
 		
 		<!--- Return out. --->

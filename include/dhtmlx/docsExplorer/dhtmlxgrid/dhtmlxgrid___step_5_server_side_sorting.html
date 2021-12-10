@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en"
  lang="en" dir="ltr">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
     dhtmlxgrid:step_5_server_side_sorting    [DHX documentation]
@@ -11,7 +11,7 @@
   <div class="stylehead">
 
     <div class="header">
-    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <a class="logo" href="https://dhtmlx.com" title="DHTMLX Home Page"></a>
     <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
 
     <div class="search-field">
@@ -85,7 +85,7 @@ To cancel client side sorting we need to enable sorting for the columns first. L
 <p>
 
 The “server” sorting type means nothing for sorting routine of the grid, so it&#039;ll just ignore it. This information is mostly for myself as column sorting was moved to server side. Put this command somewhere before mygrid.init() .
-Now we are ready to execute stages 1 and 2 of the plan. We&#039;ll do this with onBeforeSorting event handler. First let&#039;s define the handler function. According to <a href="http://www.dhtmlx.com/docs/products/dhtmlxGrid/doc/events.html" class="urlextern" title="http://www.dhtmlx.com/docs/products/dhtmlxGrid/doc/events.html"  rel="nofollow">events documentation</a> it gets 3 incoming arguments:
+Now we are ready to execute stages 1 and 2 of the plan. We&#039;ll do this with onBeforeSorting event handler. First let&#039;s define the handler function. According to <a href="https://www.dhtmlx.com/docs/products/dhtmlxGrid/doc/events.html" class="urlextern" title="https://www.dhtmlx.com/docs/products/dhtmlxGrid/doc/events.html"  rel="nofollow">events documentation</a> it gets 3 incoming arguments:
 </p>
 
 <p>
@@ -130,8 +130,8 @@ Here is a code sample for <acronym title="Hypertext Preprocessor">PHP</acronym>:
 
 </p>
 <pre class="code php">      <span class="co1">//order by</span>
-      <span class="re0">$columns</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;nm&quot;</span><span class="sy0">,</span><span class="st0">&quot;code&quot;</span><span class="sy0">,</span><span class="st0">&quot;num_val&quot;</span><span class="br0">&#41;</span>;
-      <span class="kw1">if</span><span class="br0">&#40;</span><a href="http://www.php.net/isset"><span class="kw3">isset</span></a><span class="br0">&#40;</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st0">&quot;orderby&quot;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+      <span class="re0">$columns</span> <span class="sy0">=</span> <a href="https://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;nm&quot;</span><span class="sy0">,</span><span class="st0">&quot;code&quot;</span><span class="sy0">,</span><span class="st0">&quot;num_val&quot;</span><span class="br0">&#41;</span>;
+      <span class="kw1">if</span><span class="br0">&#40;</span><a href="https://www.php.net/isset"><span class="kw3">isset</span></a><span class="br0">&#40;</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st0">&quot;orderby&quot;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
           <span class="kw1">if</span><span class="br0">&#40;</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st0">&quot;direct&quot;</span><span class="br0">&#93;</span><span class="sy0">==</span><span class="st_h">'des'</span><span class="br0">&#41;</span>
               <span class="re0">$direct</span> <span class="sy0">=</span> <span class="st0">&quot;DESC&quot;</span>;
           <span class="kw1">else</span>   
@@ -139,7 +139,7 @@ Here is a code sample for <acronym title="Hypertext Preprocessor">PHP</acronym>:
           <span class="re0">$sql</span><span class="sy0">.=</span><span class="st0">&quot; Order by &quot;</span><span class="sy0">.</span><span class="re0">$columns</span><span class="br0">&#91;</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st0">&quot;orderby&quot;</span><span class="br0">&#93;</span><span class="br0">&#93;</span><span class="sy0">.</span><span class="st0">&quot; &quot;</span><span class="sy0">.</span><span class="re0">$direct</span>;
       <span class="br0">&#125;</span></pre>
 <p>
-<img src="/dhtmlx/docs/lib/images/smileys/fixme.gif" class="middle" alt="FIXME" /> <a href="http://./dhtmlxGrid_sbs_biggrid.zip" class="urlextern" title="http://./dhtmlxGrid_sbs_biggrid.zip"  rel="nofollow">Download related files</a>
+<img src="/dhtmlx/docs/lib/images/smileys/fixme.gif" class="middle" alt="FIXME" /> <a href="https://./dhtmlxGrid_sbs_biggrid.zip" class="urlextern" title="https://./dhtmlxGrid_sbs_biggrid.zip"  rel="nofollow">Download related files</a>
 </p>
 
 </div>

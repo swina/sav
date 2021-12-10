@@ -14,10 +14,10 @@
 	<cfif qryDocs.recordcount GT 0>
 	<cfoutput query="qryDocs">
 		<tr>
-			<td><a href="http://vm4.indual.it/sav/docs/status/#url.folder#\#name#" target="_blank">#name#</a><br></td>
+			<td><a href="https://vm4.indual.it/sav/docs/status/#url.folder#\#name#" target="_blank">#name#</a><br></td>
 			<td>#Dateformat(datelastmodified,"dd.mm.yyyy")#</td>
 			<td>
-			<a href="http://vm4.indual.it/sav/docs/status/#url.folder#\#name#" target="_blank"><img src="../include/css/icons/knobs/action_paste.gif" border="0" alt="Apri" title="Apri"></a>
+			<a href="https://vm4.indual.it/sav/docs/status/#url.folder#\#name#" target="_blank"><img src="../include/css/icons/knobs/action_paste.gif" border="0" alt="Apri" title="Apri"></a>
 			</td>
 			<td><a href="?delete=#name#&folder=#url.folder#"><img src="../include/css/icons/page_cross.gif" align="absmiddle" title="Cancella documento" style="cursor:pointer"></a></td>
 		</tr>

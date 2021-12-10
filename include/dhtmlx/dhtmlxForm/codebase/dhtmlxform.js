@@ -2545,7 +2545,7 @@ dhtmlxEvent(window, "load", function(){
 });
 
 
-//all purpose set of rules, based on http://code.google.com/p/validation-js
+//all purpose set of rules, based on https://code.google.com/p/validation-js
 dhtmlxValidation=function(){}
 dhtmlxValidation.prototype={
 	trackInput:function(el,rule,callback_error,callback_correct){

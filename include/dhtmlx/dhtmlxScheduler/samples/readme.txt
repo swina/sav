@@ -8,7 +8,7 @@ The next samples require php suppport
 	06_timeline/04_tree_db.html
 	
 For java, .net, cf, rails, asp samples check 
-http://docs.dhtmlx.com/doku.php?id=dhtmlxscheduler:server_side_integration#samples_for_different_platforms
+https://docs.dhtmlx.com/doku.php?id=dhtmlxscheduler:server_side_integration#samples_for_different_platforms
 	
 To check them you need to 
 	- import samples/common/dump.sql
@@ -16,7 +16,7 @@ To check them you need to
 	
 04_export/04_pdf.html requires separate package - "scheduler-to-pdf", 
 which can be obtained from 
-http://www.dhtmlx.com/blog/?p=306
+https://www.dhtmlx.com/blog/?p=306
 
 06_timeline/04_tree_db.html  requires dhtmlxTree
 

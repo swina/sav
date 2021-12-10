@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en"
  lang="en" dir="ltr">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
     dhtmlxconnector:formatting_changing_data_before_loading    [DHX documentation]
@@ -11,7 +11,7 @@
   <div class="stylehead">
 
     <div class="header">
-    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <a class="logo" href="https://dhtmlx.com" title="DHTMLX Home Page"></a>
     <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
 
     <div class="search-field">
@@ -94,8 +94,8 @@ In case you need to update values which were returned from database table or set
 Common use-case will be similar to next
 
 </p>
-<pre class="code php">	<span class="re0">$res</span><span class="sy0">=</span><a href="http://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">&#40;</span><span class="re0">$mysql_server</span><span class="sy0">,</span><span class="re0">$mysql_user</span><span class="sy0">,</span><span class="re0">$mysql_pass</span><span class="br0">&#41;</span>;
-	<a href="http://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">&#40;</span><span class="re0">$mysql_db</span><span class="br0">&#41;</span>;
+<pre class="code php">	<span class="re0">$res</span><span class="sy0">=</span><a href="https://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">&#40;</span><span class="re0">$mysql_server</span><span class="sy0">,</span><span class="re0">$mysql_user</span><span class="sy0">,</span><span class="re0">$mysql_pass</span><span class="br0">&#41;</span>;
+	<a href="https://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">&#40;</span><span class="re0">$mysql_db</span><span class="br0">&#41;</span>;
 	<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../codebase/grid_connector.php&quot;</span><span class="br0">&#41;</span>;	
 &nbsp;
 	<span class="kw2">function</span> color_rows<span class="br0">&#40;</span><span class="re0">$row</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
@@ -125,7 +125,7 @@ Same approach can be used for data formating
 &nbsp;
                   <span class="co1">//formatting date field</span>
                   <span class="re0">$data</span> <span class="sy0">=</span> <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;other_field&quot;</span><span class="br0">&#41;</span>;
-                  <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="st0">&quot;other_field&quot;</span><span class="sy0">,</span><a href="http://www.php.net/date"><span class="kw3">date</span></a><span class="br0">&#40;</span><span class="st0">&quot;m-d-Y&quot;</span><span class="sy0">,</span><a href="http://www.php.net/strtotime"><span class="kw3">strtotime</span></a><span class="br0">&#40;</span><span class="re0">$data</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+                  <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="st0">&quot;other_field&quot;</span><span class="sy0">,</span><a href="https://www.php.net/date"><span class="kw3">date</span></a><span class="br0">&#40;</span><span class="st0">&quot;m-d-Y&quot;</span><span class="sy0">,</span><a href="https://www.php.net/strtotime"><span class="kw3">strtotime</span></a><span class="br0">&#40;</span><span class="re0">$data</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
 	<span class="br0">&#125;</span>
 &nbsp;
 	<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;

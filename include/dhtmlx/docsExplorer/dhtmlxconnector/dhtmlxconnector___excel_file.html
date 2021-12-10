@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en"
  lang="en" dir="ltr">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
     dhtmlxconnector:excel_file    [DHX documentation]
@@ -11,7 +11,7 @@
   <div class="stylehead">
 
     <div class="header">
-    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <a class="logo" href="https://dhtmlx.com" title="DHTMLX Home Page"></a>
     <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
 
     <div class="search-field">
@@ -69,7 +69,7 @@ Connector 1.0+ allows to use MsExcel file as datasource, you can load data from 
 
 <p>
 To start using this feature you need to download libExcel - which is standalone project and not included in the connector&#039;s package
-You can grab it from here <a href="http://support.dhtmlx.com/x-files/connector/phpExcel.zip" class="urlextern" title="http://support.dhtmlx.com/x-files/connector/phpExcel.zip"  rel="nofollow">http://support.dhtmlx.com/x-files/connector/phpExcel.zip</a> or from author&#039;s site <a href="http://www.codeplex.com/PHPExcel" class="urlextern" title="http://www.codeplex.com/PHPExcel"  rel="nofollow">http://www.codeplex.com/PHPExcel</a> - unzip lib to the connector&#039;s folder. 
+You can grab it from here <a href="https://support.dhtmlx.com/x-files/connector/phpExcel.zip" class="urlextern" title="https://support.dhtmlx.com/x-files/connector/phpExcel.zip"  rel="nofollow">https://support.dhtmlx.com/x-files/connector/phpExcel.zip</a> or from author&#039;s site <a href="https://www.codeplex.com/PHPExcel" class="urlextern" title="https://www.codeplex.com/PHPExcel"  rel="nofollow">https://www.codeplex.com/PHPExcel</a> - unzip lib to the connector&#039;s folder. 
 </p>
 
 <p>
@@ -121,7 +121,7 @@ If you want to load both data and header from excel file, it can be done by usin
 &nbsp;
 		<span class="re0">$config</span><span class="sy0">=</span><span class="kw2">new</span> GridConfiguration<span class="br0">&#40;</span><span class="br0">&#41;</span>;
 		<span class="co1">//array of cells, with labels for grid's header</span>
-		<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setHeader</span><span class="br0">&#40;</span><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">sql</span><span class="sy0">-&gt;</span><span class="me1">excel_data</span><span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;A3&quot;</span><span class="sy0">,</span><span class="st0">&quot;B3&quot;</span><span class="sy0">,</span><span class="st0">&quot;F13&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+		<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setHeader</span><span class="br0">&#40;</span><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">sql</span><span class="sy0">-&gt;</span><span class="me1">excel_data</span><span class="br0">&#40;</span><a href="https://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;A3&quot;</span><span class="sy0">,</span><span class="st0">&quot;B3&quot;</span><span class="sy0">,</span><span class="st0">&quot;F13&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
 		<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_config</span><span class="br0">&#40;</span><span class="re0">$config</span><span class="br0">&#41;</span>;
 &nbsp;
 	<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;A18&quot;</span><span class="sy0">,</span> <span class="st0">&quot;id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;A,B,F&quot;</span><span class="br0">&#41;</span>;</pre>

@@ -9,7 +9,7 @@
 	
 	<cfoutput>
 	<script type="text/javascript">
-    	var GB_ROOT_DIR = "http://#http_host#/sav/include/greybox/";
+    	var GB_ROOT_DIR = "https://#http_host#/sav/include/greybox/";
 	</script>
 	</cfoutput>
 	<script type="text/javascript" src="../include/greybox/AJS.js"></script>
@@ -30,8 +30,8 @@
 	</script> --->
 	<script  src="../include/dhtmlx/dhtmlxCalendar/codebase/dhtmlxcommon.js"></script>
 	<script  src="../include/dhtmlx/dhtmlxCalendar/codebase/dhtmlxcalendar.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
 
 	<!--- WINDOW --->
 	<link rel="stylesheet" type="text/css" href="#mydhtml#/dhtmlxwindows/codebase/dhtmlxwindows.css">

@@ -12,16 +12,16 @@
     "url": "git://github.com/jquery/jquery-ui.git"
   },
   "bugs": {
-    "url": "http://bugs.jqueryui.com/"
+    "url": "https://bugs.jqueryui.com/"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
+      "url": "https://www.opensource.org/licenses/MIT"
     },
     {
       "type": "GPL",
-      "url": "http://www.opensource.org/licenses/GPL-2.0"
+      "url": "https://www.opensource.org/licenses/GPL-2.0"
     }
   ],
   "dependencies": {},

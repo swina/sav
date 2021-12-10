@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en"
  lang="en" dir="ltr">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
     dhtmlxconnector:defining_grid_structure_on_server_side    [DHX documentation]
@@ -11,7 +11,7 @@
   <div class="stylehead">
 
     <div class="header">
-    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <a class="logo" href="https://dhtmlx.com" title="DHTMLX Home Page"></a>
     <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
 
     <div class="search-field">
@@ -122,8 +122,8 @@ If you want to have automatic server side sorting and filtering for all columns 
 In manual mode you need to define headers and their parameters by php command. Names of commands mimic names of js commands, with similar functionality. 
 </p>
 <pre class="code php"><span class="re0">$config</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConfiguration<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setHeader</span><span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;column 1&quot;</span><span class="sy0">,</span><span class="st0">&quot;column 2&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
-<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setColTypes</span><span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;ro&quot;</span><span class="sy0">,</span><span class="st0">&quot;ed&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setHeader</span><span class="br0">&#40;</span><a href="https://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;column 1&quot;</span><span class="sy0">,</span><span class="st0">&quot;column 2&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setColTypes</span><span class="br0">&#40;</span><a href="https://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;ro&quot;</span><span class="sy0">,</span><span class="st0">&quot;ed&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
 &nbsp;
 <span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_config</span><span class="br0">&#40;</span><span class="re0">$config</span><span class="br0">&#41;</span>;
 &nbsp;
@@ -207,8 +207,8 @@ Sets symbol or several symbols which will be used as delimiter in string argumen
 <h4><a name="example" id="example">Example</a></h4>
 <div class="level4">
 <pre class="code php"><span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;../config.php&quot;</span><span class="br0">&#41;</span>;
-<span class="re0">$res</span><span class="sy0">=</span><a href="http://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">&#40;</span><span class="re0">$mysql_server</span><span class="sy0">,</span><span class="re0">$mysql_user</span><span class="sy0">,</span><span class="re0">$mysql_pass</span><span class="br0">&#41;</span>;
-<a href="http://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">&#40;</span><span class="re0">$mysql_db</span><span class="br0">&#41;</span>;
+<span class="re0">$res</span><span class="sy0">=</span><a href="https://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">&#40;</span><span class="re0">$mysql_server</span><span class="sy0">,</span><span class="re0">$mysql_user</span><span class="sy0">,</span><span class="re0">$mysql_pass</span><span class="br0">&#41;</span>;
+<a href="https://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">&#40;</span><span class="re0">$mysql_db</span><span class="br0">&#41;</span>;
 &nbsp;
 <span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../codebase/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
 <span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
@@ -217,7 +217,7 @@ Sets symbol or several symbols which will be used as delimiter in string argumen
 &nbsp;
 	<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setHeader</span><span class="br0">&#40;</span><span class="st0">&quot;Item Name,Item CD&quot;</span><span class="br0">&#41;</span>;
 	<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">attachHeader</span><span class="br0">&#40;</span><span class="st0">&quot;Item Name Test,#rspan&quot;</span><span class="br0">&#41;</span>;
-	<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">attachFooter</span><span class="br0">&#40;</span><span class="st0">&quot;Item Name,Item CD&quot;</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a><span class="br0">&#40;</span><span class="st0">&quot;background-color: #ff0000;&quot;</span><span class="sy0">,</span> <span class="st0">&quot;background-color: #00ff00;&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+	<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">attachFooter</span><span class="br0">&#40;</span><span class="st0">&quot;Item Name,Item CD&quot;</span><span class="sy0">,</span> <a href="https://www.php.net/array"><span class="kw3">Array</span></a><span class="br0">&#40;</span><span class="st0">&quot;background-color: #ff0000;&quot;</span><span class="sy0">,</span> <span class="st0">&quot;background-color: #00ff00;&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
 	<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">attachFooter</span><span class="br0">&#40;</span><span class="st0">&quot;Item Name Test,#rspan&quot;</span><span class="sy0">,</span> <span class="st0">&quot;background-color: #0000ff;color:white;&quot;</span><span class="br0">&#41;</span>;
 	<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setColIds</span><span class="br0">&#40;</span><span class="st0">&quot;col1,col2&quot;</span><span class="br0">&#41;</span>;
 	<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setInitWidths</span><span class="br0">&#40;</span><span class="st_h">'120,*'</span><span class="br0">&#41;</span>;

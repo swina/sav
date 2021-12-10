@@ -1,5 +1,5 @@
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 You allowed to use this component or parts of it under GPL terms
 To use it on other terms please contact us at sales@dhtmlx.com
 */

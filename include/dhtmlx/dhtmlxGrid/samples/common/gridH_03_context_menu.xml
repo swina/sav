@@ -21,7 +21,7 @@
         </settings>
     </head>
  	<row id="1">
-		<userdata name="link">http://www.randomhouse.com/features/grisham/</userdata>
+		<userdata name="link">https://www.randomhouse.com/features/grisham/</userdata>
 		<cell>-1500</cell>
 		<cell>A Time to Kill</cell>
 		<cell>John Grisham</cell>
@@ -41,7 +41,7 @@
 		<cell>24</cell>
 		<cell>0</cell>
 		<cell>01/01/2000</cell>
-		<userdata name="link">http://www.stephenking.com/</userdata>		
+		<userdata name="link">https://www.stephenking.com/</userdata>		
 	</row>
 	<row id="3" selected="1">
 		<cell>-200</cell>
@@ -52,7 +52,7 @@
 		<cell>48</cell>
 		<cell>0</cell>
 		<cell>12/01/2001</cell>
-		<userdata name="link">http://www.randomhouse.com/features/grisham/</userdata>
+		<userdata name="link">https://www.randomhouse.com/features/grisham/</userdata>
 	</row>
 	<row id="4">
 		<cell>350</cell>
@@ -63,7 +63,7 @@
 		<cell>24</cell>
 		<cell>0</cell>
 		<cell>01/01/1992</cell>
-		<userdata name="link">http://www.stephenking.com/</userdata>
+		<userdata name="link">https://www.stephenking.com/</userdata>
 	</row>
 	<row id="5">
 		<cell>700</cell>
@@ -74,7 +74,7 @@
 		<cell>na</cell>
 		<cell>0</cell>
 		<cell>01/01/2003</cell>
-		<userdata name="link">http://www.stephenking.com/</userdata>
+		<userdata name="link">https://www.stephenking.com/</userdata>
 	</row>
 	<row id="6">
 		<cell>-1200</cell>
@@ -85,7 +85,7 @@
 		<cell>48</cell>
 		<cell>0</cell>
 		<cell>10/30/1999</cell>
-		<userdata name="link">http://www.stephenking.com/</userdata>
+		<userdata name="link">https://www.stephenking.com/</userdata>
 	</row>
 	<row id="7">
 		<cell>1500</cell>
@@ -96,7 +96,7 @@
 		<cell>48</cell>
 		<cell>1</cell>
 		<cell>01/01/2005</cell>
-		<userdata name="link">http://www.randomhouse.com/features/grisham/</userdata>
+		<userdata name="link">https://www.randomhouse.com/features/grisham/</userdata>
 	</row>
 	<row id="8">
 		<cell>500</cell>
@@ -107,7 +107,7 @@
 		<cell>na</cell>
 		<cell>0</cell>
 		<cell>10/15/2001</cell>
-		<userdata name="link">http://www.stephenking.com/</userdata>
+		<userdata name="link">https://www.stephenking.com/</userdata>
 	</row>
 	<row id="9">
 		<cell>400</cell>
@@ -138,6 +138,6 @@
 		<cell>1</cell>
 		<cell>0</cell>
 		<cell>01/01/1999</cell>
-		<userdata name="link">http://www.lewiscarroll.org/</userdata>
+		<userdata name="link">https://www.lewiscarroll.org/</userdata>
 	</row>
 </rows>

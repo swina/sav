@@ -1,5 +1,5 @@
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 You allowed to use this component or parts of it under GPL terms
 To use it on other terms or get Professional edition of the component please contact us at sales@dhtmlx.com
 */
@@ -634,7 +634,7 @@ dhtmlx.env.transform_prefix = (function(){
 		return prefix;
 })();
 dhtmlx.env.svg = (function(){
-		return document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1");
+		return document.implementation.hasFeature("https://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1");
 })();
 
 //store maximum used z-index

@@ -19,11 +19,11 @@
 	<item id="sep3" type="separator"/>
 	
 	<item id="cut"   type="button" img="cut.gif"   text="Cut"   imgdis="cut_dis.gif"   action="doEdit">
-		<userdata name="linka"><![CDATA[http://linkA]]></userdata>
-		<userdata name="linkb"><![CDATA[http://linkB]]></userdata>
+		<userdata name="linka"><![CDATA[https://linkA]]></userdata>
+		<userdata name="linkb"><![CDATA[https://linkB]]></userdata>
 	</item>
 	<item id="copy"  type="button" img="copy.gif"  text="Copy"  imgdis="copy_dis.gif"  action="doEdit">
-		<userdata name="linkc"><![CDATA[http://linkC]]></userdata>
+		<userdata name="linkc"><![CDATA[https://linkC]]></userdata>
 	</item>
 	<item id="paste" type="button" img="paste.gif" text="Paste" imgdis="paste_dis.gif" action="doEdit"/>
 	

@@ -1,7 +1,7 @@
 //v.2.6 build 100722
 
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 You allowed to use this component or parts of it under GPL terms
 To use it on other terms or get Professional edition of the component please contact us at sales@dhtmlx.com
 */
@@ -205,7 +205,7 @@ function xmlPointer(data){this.d=data;};xmlPointer.prototype={text:function(){if
 //v.2.6 build 100722
 
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 You allowed to use this component or parts of it under GPL terms
 To use it on other terms or get Professional edition of the component please contact us at sales@dhtmlx.com
 */

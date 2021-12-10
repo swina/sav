@@ -1,7 +1,7 @@
 //v.2.6 build 100722
 
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 To use this component please contact sales@dhtmlx.com to obtain license
 */
 function dhtmlXContainer(obj) {var that = this;this.obj = obj;this.dhxcont = null;this.st = document.createElement("DIV");this.st.style.position = "absolute";this.st.style.left = "-200px";this.st.style.top = "0px";this.st.style.width = "100px";this.st.style.height = "1px";this.st.style.visibility = "hidden";this.st.style.overflow = "hidden";document.body.insertBefore(this.st, document.body.childNodes[0]);this.obj._getSt = function() {return that.st;};this.obj.dv = "def";this.obj.av = this.obj.dv;this.obj.cv = this.obj.av;this.obj.vs = {};this.obj.vs[this.obj.av] = {};this.obj.view = function(name) {if (!this.vs[name]){this.vs[name] = {};this.vs[name].dhxcont = this.vs[this.dv].dhxcont;var mainCont = document.createElement("DIV");mainCont.style.position = "relative";mainCont.style.left = "0px";mainCont.style.width = "200px";mainCont.style.height = "200px";mainCont.style.overflow = "hidden";that.st.appendChild(mainCont);this.vs[name].dhxcont.mainCont[name] = mainCont;};this.avt = this.av;this.av = name;return this;};this.obj.setActive = function() {if (!this.vs[this.av])return;this.cv = this.av;if (this.vs[this.avt].dhxcont == this.vs[this.avt].dhxcont.mainCont[this.avt].parentNode){that.st.appendChild(this.vs[this.avt].dhxcont.mainCont[this.avt]);if (this.vs[this.avt].menu)that.st.appendChild(document.getElementById(this.vs[this.avt].menuId));if (this.vs[this.avt].toolbar)that.st.appendChild(document.getElementById(this.vs[this.avt].toolbarId));if (this.vs[this.avt].sb)that.st.appendChild(document.getElementById(this.vs[this.avt].sbId));};if (this._isCell){};if (this.vs[this.av].dhxcont != this.vs[this.av].dhxcont.mainCont[this.av].parentNode){this.vs[this.av].dhxcont.insertBefore(this.vs[this.av].dhxcont.mainCont[this.av],this.vs[this.av].dhxcont.childNodes[this.vs[this.av].dhxcont.childNodes.length-1]);if (this.vs[this.av].menu)this.vs[this.av].dhxcont.insertBefore(document.getElementById(this.vs[this.av].menuId), this.vs[this.av].dhxcont.childNodes[0]);if (this.vs[this.av].toolbar)this.vs[this.av].dhxcont.insertBefore(document.getElementById(this.vs[this.av].toolbarId), this.vs[this.av].dhxcont.childNodes[(this.vs[this.av].menu?1:0)]);if (this.vs[this.av].sb)this.vs[this.av].dhxcont.insertBefore(document.getElementById(this.vs[this.av].sbId), this.vs[this.av].dhxcont.childNodes[this.vs[this.av].dhxcont.childNodes.length-1]);};if (this._doOnResize)this._doOnResize();this.avt = null;};this.obj._viewRestore = function() {var t = this.av;if (this.avt){this.av = this.avt;this.avt = null;};return t;};this.setContent = function(data) {this.obj.vs[this.obj.av].dhxcont = data;this.obj._init();};this.obj._init = function() {this.vs[this.av].dhxcont.innerHTML = "<div ida='dhxMainCont' style='position: relative;left: 0px;top: 0px;overflow: hidden;'></div>"+
@@ -10,6 +10,6 @@ function dhtmlXContainer(obj) {var that = this;this.obj = obj;this.dhxcont = nul
 //v.2.6 build 100722
 
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 To use this component please contact sales@dhtmlx.com to obtain license
 */

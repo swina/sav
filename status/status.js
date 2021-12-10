@@ -724,11 +724,11 @@ ColdFusion.Ajax.submitForm("processoFrm","_statusDocsMove.cfm",callbackDocsMove,
 			setValore("ac_modulo",myModuli[indice]);
 			setValore("modulo_flag",0);
 			if ( getValore("modulo_uuid") == "" ){
-				GB_showCenter(myModuli[indice], "http://87.248.52.100/sav/status/_statusModulo.cfm?text=" + myModuli[indice] + "&id_cliente=" + idcliente, 350, 400, callBackModulo);
+				GB_showCenter(myModuli[indice], "https://87.248.52.100/sav/status/_statusModulo.cfm?text=" + myModuli[indice] + "&id_cliente=" + idcliente, 350, 400, callBackModulo);
 				//setValore("modulo_flag","1");
 			} else {
 				setValore("modulo_flag","1");
-				GB_showCenter(myModuli[indice], "http://87.248.52.100/sav/status/_statusModulo.cfm?text=" + myModuli[indice] + "&uuid=" + getValore("modulo_uuid"), 350, 400, callBackModulo);
+				GB_showCenter(myModuli[indice], "https://87.248.52.100/sav/status/_statusModulo.cfm?text=" + myModuli[indice] + "&uuid=" + getValore("modulo_uuid"), 350, 400, callBackModulo);
 				
 			}
 			setValore("modulo_flag","1");

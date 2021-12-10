@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en"
  lang="en" dir="ltr">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
     dhtmlxgrid:step_4_filtering_passing_parameters    [DHX documentation]
@@ -11,7 +11,7 @@
   <div class="stylehead">
 
     <div class="header">
-    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <a class="logo" href="https://dhtmlx.com" title="DHTMLX Home Page"></a>
     <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
 
     <div class="search-field">
@@ -75,8 +75,8 @@ Why do you think you need additional parameters and why am I talking about them 
 
 Let&#039;s add the possibility to filter grid data by product name mask. Put the following code right before the DIV container we used for grid initialization:
 </p>
-<pre class="code html4strict">  <span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;Text&quot;</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;nm_mask&quot;</span>&gt;</span>
-  <span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;Button&quot;</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">&quot;Filter&quot;</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">&quot;applyFilter()&quot;</span>&gt;</span></pre>
+<pre class="code html4strict">  <span class="sc2">&lt;<a href="https://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;Text&quot;</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;nm_mask&quot;</span>&gt;</span>
+  <span class="sc2">&lt;<a href="https://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;Button&quot;</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">&quot;Filter&quot;</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">&quot;applyFilter()&quot;</span>&gt;</span></pre>
 <p>
 
 As you see, clicking the “Filter” button we call applyFilter function, which doesn&#039;t exist as we haven&#039;t created it yet. Let&#039;s do it now. It will contain the magic of getting the content for grid based on additional parameter :)
@@ -94,7 +94,7 @@ Now getGridRecords file gets additional parameter named name_mask, which you can
 </p>
 <pre class="code php">      <span class="co1">//query to products table</span>
       <span class="re0">$sql</span> <span class="sy0">=</span> <span class="st0">&quot;SELECT  * FROM products&quot;</span>;
-      <span class="kw1">if</span><span class="br0">&#40;</span><a href="http://www.php.net/isset"><span class="kw3">isset</span></a><span class="br0">&#40;</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st0">&quot;name_mask&quot;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+      <span class="kw1">if</span><span class="br0">&#40;</span><a href="https://www.php.net/isset"><span class="kw3">isset</span></a><span class="br0">&#40;</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st0">&quot;name_mask&quot;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
           <span class="re0">$sql</span><span class="sy0">.=</span><span class="st0">&quot; Where nm like '&quot;</span><span class="sy0">.</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st0">&quot;name_mask&quot;</span><span class="br0">&#93;</span><span class="sy0">.</span><span class="st0">&quot;%'&quot;</span>;</pre>
 </div>
 <div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="53-" /><input type="hidden" name="rev" value="1279031289" /><input type="hidden" name="id" value="dhtmlxgrid:step_4_filtering_passing_parameters" /><input type="submit" value="Edit" class="button" title="Step 4. Filtering. Passing Additional Parameters to Server Side" /></div></form></div>

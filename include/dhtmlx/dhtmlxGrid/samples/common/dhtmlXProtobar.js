@@ -1,5 +1,5 @@
 /*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
+Copyright DHTMLX LTD. https://www.dhtmlx.com
 */ 
  
  function dhtmlXProtobarObject(){

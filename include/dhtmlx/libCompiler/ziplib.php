@@ -7,8 +7,8 @@
 // Simple set of functions to create a zipfile
 // according to the PKWare specifications, which
 // can be found on:
-// http://www.pkware.com/products/enterprise/white_papers/
-// ©1989-2003, PKWARE Inc.
+// https://www.pkware.com/products/enterprise/white_papers/
+// ï¿½1989-2003, PKWARE Inc.
 
 // functions in here start with zl, which comes from ZipLib ;)
 
@@ -138,7 +138,7 @@ public function zl_pack($comment) {
 		$cdss .=$file_stats['name'];
 	}
 
-	// and final, the ending central directory structure! "WHOO HOOW!" (©Blur, 1998)
+	// and final, the ending central directory structure! "WHOO HOOW!" (ï¿½Blur, 1998)
 	$cdse = "\x50\x4b\x05\x06";			// Header
 	$cdse .="\x00\x00";				// number of this disk
 	$cdse .="\x00\x00";				// number of the disk with the start of the central directory

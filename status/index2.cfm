@@ -9,7 +9,7 @@
 	
 	<cfoutput>
 	<script type="text/javascript">
-    	var GB_ROOT_DIR = "http://#http_host#/sav/include/greybox/";
+    	var GB_ROOT_DIR = "https://#http_host#/sav/include/greybox/";
 	</script>
 	</cfoutput>
 	<script type="text/javascript" src="../include/greybox/AJS.js"></script>

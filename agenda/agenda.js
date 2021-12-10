@@ -76,7 +76,7 @@ function dateParser(myDate){
 
 function oraParser(data,id){
 		$.ajax({
-			url: "http://" + $('#url_host').val() + "/savmarket/agenda/agenda.cfc",
+			url: "https://" + $('#url_host').val() + "/savmarket/agenda/agenda.cfc",
 			type: 'GET',
 			data: {method: 'getTimeEvent', returnFormat: 'plain', id: id, tipo: 'start'}, 
 	    	dataType: 'html',
@@ -99,7 +99,7 @@ function oraParser(data,id){
 
 function oraEndParser(data,id){
 	$.ajax({
-			url: "http://" + $('#url_host').val() + "/savmarket/agenda/agenda.cfc",
+			url: "https://" + $('#url_host').val() + "/savmarket/agenda/agenda.cfc",
 			type: 'GET',
 			data: {method: 'getTimeEvent', returnFormat: 'plain', id: id, tipo: 'end'}, 
 	    	dataType: 'html',

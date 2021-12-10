@@ -892,8 +892,8 @@ background-image: -webkit-gradient(linear,left top,right top,color-stop(0.1, rgb
 		}
 		
 		.frm-valid {
-			background: url(http://vm3.indual.it/vinquiry/img/tick.png) right no-repeat;
-			background-image: url(http://vm3.indual.it/vinquiry/img/tick.png);
+			background: url(../img/tick.png) right no-repeat;
+			background-image: url(../img/tick.png);
 			background-repeat-x: no-repeat;
 			background-repeat-y: no-repeat;
 			background-attachment: initial;

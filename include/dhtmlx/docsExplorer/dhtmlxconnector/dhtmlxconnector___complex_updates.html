@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en"
  lang="en" dir="ltr">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
     dhtmlxconnector:complex_updates    [DHX documentation]
@@ -11,7 +11,7 @@
   <div class="stylehead">
 
     <div class="header">
-    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <a class="logo" href="https://dhtmlx.com" title="DHTMLX Home Page"></a>
     <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
 
     <div class="search-field">
@@ -107,7 +107,7 @@ Grid provides set of events, which can be used to handle server side action in y
 <pre class="code php">      <span class="co1">//data preprocessing before update</span>
       <span class="kw2">function</span> my_update<span class="br0">&#40;</span><span class="re0">$data</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
             <span class="re0">$price</span> <span class="sy0">=</span> <span class="re0">$data</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;price&quot;</span><span class="br0">&#41;</span>;
-            <span class="re0">$price</span> <span class="sy0">=</span> <a href="http://www.php.net/intval"><span class="kw3">intval</span></a><span class="br0">&#40;</span><span class="re0">$price</span><span class="br0">&#41;</span>;
+            <span class="re0">$price</span> <span class="sy0">=</span> <a href="https://www.php.net/intval"><span class="kw3">intval</span></a><span class="br0">&#40;</span><span class="re0">$price</span><span class="br0">&#41;</span>;
             <span class="re0">$data</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="st0">&quot;price&quot;</span><span class="br0">&#41;</span>;
       <span class="br0">&#125;</span> 
       <span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeUpdate&quot;</span><span class="sy0">,</span><span class="st0">&quot;my_update&quot;</span><span class="br0">&#41;</span></pre><pre class="code php">      <span class="co1">//including additional field to request</span>

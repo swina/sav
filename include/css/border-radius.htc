@@ -1,6 +1,6 @@
 --Do not remove this if you are using--
 Original Author: Remiz Rahnas
-Original Author URL: http://www.htmlremix.com
+Original Author URL: https://www.htmlremix.com
 Published date: 2008/09/24
 
 Changes by Nick Fetchak:
@@ -12,7 +12,7 @@ Published date : 2009/11/18
 <public:attach event="oncontentready" onevent="oncontentready('v08vnSVo78t4JfjH')" />
 <script type="text/javascript">
 
-// findPos() borrowed from http://www.quirksmode.org/js/findpos.html
+// findPos() borrowed from https://www.quirksmode.org/js/findpos.html
 function findPos(obj) {
 	var curleft = curtop = 0;
 

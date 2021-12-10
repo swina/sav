@@ -2,8 +2,8 @@ Really Simple Color Picker
 -------------------------------
 
 Written by Lakshan Perera 
-For more info please visit: http://www.web2media.net/laktek/?p=96
-Source code is hosted at: http://github.com/laktek/really-simple-color-picker
+For more info please visit: https://www.web2media.net/laktek/?p=96
+Source code is hosted at: https://github.com/laktek/really-simple-color-picker
 
 Color Picker requires jQuery 1.2.6 or higher. So make sure to load it before Color Picker (there's no other dependencies!). 
 For default styles of the color picker load the CSS file that comes with the plugin.

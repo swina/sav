@@ -1,11 +1,11 @@
 /*!
  * jQuery UI Effects 1.8.23
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://docs.jquery.com/UI/Effects/
+ * https://docs.jquery.com/UI/Effects/
  */
 ;jQuery.effects || (function($, undefined) {
 
@@ -37,7 +37,7 @@ function(i, attr) {
 
 // Color Conversion functions from highlightFade
 // By Blair Mitchelmore
-// http://jquery.offput.ca/highlightFade/
+// https://jquery.offput.ca/highlightFade/
 
 // Parse strings looking for color tuples [255,255,255]
 function getRGB(color) {
@@ -90,7 +90,7 @@ function getColor(elem, attr) {
 
 // Some named colors to work with
 // From Interface by Stefan Petre
-// http://interface.eyecon.ro/
+// https://interface.eyecon.ro/
 
 var colors = {
 	aqua:[0,255,255],
@@ -214,7 +214,7 @@ function filterStyles(styles) {
 }
 
 function styleDifference(oldStyle, newStyle) {
-	var diff = { _: 0 }, // http://dev.jquery.com/ticket/5459
+	var diff = { _: 0 }, // https://dev.jquery.com/ticket/5459
 		name;
 
 	for (name in newStyle) {
@@ -564,7 +564,7 @@ $.fn.extend({
 /*********************************** EASING ***********************************/
 /******************************************************************************/
 
-// based on easing equations from Robert Penner (http://www.robertpenner.com/easing)
+// based on easing equations from Robert Penner (https://www.robertpenner.com/easing)
 
 var baseEasings = {};
 
