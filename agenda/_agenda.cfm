@@ -14,7 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="jquery.ui.datepicker-it.js" type="text/javascript"></script>
-	<link type="text/css" href="../include/css/jquery.ui/css/overcast/jquery-ui-overcast.css" rel="stylesheet" />	
+	<link type="text/css" href="../include/css/jquery-ui-overcast.css" rel="stylesheet" />	
 	<title>Agenda</title>
 </head>
 <cfinvoke component="agenda" method="events" returnvariable="rsEvents"></cfinvoke>
