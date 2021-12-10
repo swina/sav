@@ -1,0 +1,21 @@
+L'Agenda permette di visualizzare in varie modalità lo stato commerciale dei contatti in essere e riassume tutte le attività svolte o pianificate. Utilizzando l'Agenda è possibile verificare le attività svolte in passato e le attività pianificate per il futuro.
+
+L'Agenda è utilizzabile in questa versione, solo per scopo di visualizzazione. Non è infatti possibile modificare le attività. Ogni cambiamento apportato a ciascuna attività non verrà di fatto aggiornata nel database principale. 
+
+Le funzioni di visualizzazione previste sono:
+
+- Agenda: 
+visualizza una sintesi delle attività da svolgere nell'immediato futuro, indicando data, ora, attività da svolgere, cliente/contatto interessato. Cliccando sull'icona calendario è possibile visualizzare il dettaglio dell'attività.
+
+- Giorno:
+visualizza le attività giornaliere correnti. Il giorno è suddiviso in ore con righe di colore alternato ogni 30'. 
+
+- Settimana:
+visualizzazione delle attività settimanali
+
+- Mese:
+visualizzazione delle attività del mese.
+
+E' possibile modificare il giorno, la settimana ed il mese corrente di riferimento cliccando sulle frecce in alto a sx. 
+
+Cliccando sul tasto Oggi, verrà ricaricata la data corrente (settimana corrente e mese corrente).

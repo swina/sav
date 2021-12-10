@@ -1,0 +1,26 @@
+La sezione Plan offre la possibilità di verificare il piano delle attività di un periodo defibile dall'utente.
+Il sistema imposta all'avvio un periodo di -7/+7 giorni rispetto alla data corrente.
+Il Plan è di fatto il piano delle attività pianificate raggruppate per tipologia di attività
+Per ogni attività viene quindi elencato il giorno, l'ora ed il cliente relativo.
+
+E' possibile applicare dei filtri di visualizzazione ed in particolare:
+
+- dal : a partire dalla data
+- al : fino alla data
+- Gruppi Agenti: selezionare per visualizzare il piano delle attività di un particolare gruppo di Agenti (funzione riservata alla Direzione Commerciale o all'Affiliato)
+- Agente: selezionare un agente per visualizzare il suo piano delle attività
+- Processo: selezionare un processo per visualizzare solo il piano delle attività di tale processo.
+
+
+Alcuni esempi:
+
+1) visualizzare il piano delle attività di un agente per un determinato periodo
+	- selezionare il periodo di interesse;
+	- selezionare l'agente
+	- cliccare su Vedi
+	
+2) visualizzare i processi Presentazione Offerta pianificati per un determinato periodo:
+	- selezionare il periodo di interesse;
+	- selezionare il processo Presentazione Offerta
+	- cliccare su Vedi
+	

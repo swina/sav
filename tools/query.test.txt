@@ -1,0 +1,33 @@
+Select 
+tbl_status.id_status,
+DATE_FORMAT(tbl_status.dt_status,'%d/%m/%Y') AS data_status,
+DATE_FORMAT(tbl_status.dt_status,'%H:%i') AS ora_status,
+tbl_status.ac_note,
+tbl_status.ac_docs,
+tbl_status.ac_modulo_uuid,
+tbl_status.ac_valore,
+tbl_status.id_persona,
+tbl_clienti.id_cliente,
+tbl_clienti.id_agente,
+tbl_clienti.ac_cognome,
+tbl_clienti.ac_azienda,
+tbl_clienti.ac_citta,
+tbl_processi.id_processo,
+tbl_processi.int_tipo,
+tbl_processi.ac_processo,
+tbl_processi.ac_sigla,
+tbl_processi.ac_colore,
+tbl_processi.ac_modulo,
+tbl_processi.bl_documento,
+tbl_processi.ac_permissions,
+tbl_processi.bl_assegnazione,
+CONCAT( tbl_persone.ac_cognome, " " , tbl_persone.ac_nome ) AS assegnazione,
+tbl_persone.id_persona AS agente,
+tbl_gruppi.id_gruppo AS gruppo
+From
+tbl_status
+Inner Join tbl_processi ON tbl_processi.id_processo = tbl_status.id_processo 
+Inner Join tbl_clienti ON tbl_status.id_cliente = tbl_clienti.id_cliente
+LEFT JOIN tbl_persone ON tbl_status.id_persona = tbl_persone.id_persona
+LEFT JOIN tbl_gruppi ON tbl_persone.id_gruppo = tbl_gruppi.id_gruppo
+WHERE tbl_clienti.id_cliente = 24522

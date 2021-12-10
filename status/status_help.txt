@@ -1,0 +1,72 @@
+Lo Status Operativo è il sistema che permette di verificare le attività commerciali in essere.
+
+
+VISUALIZZAZIONE E FILTRI
+------------------------------------------------------------------------------------
+La visualizzazione permette di verificare in tempo reale lo stato delle attività commerciali.
+E' possibile impostare dei filtri al fine di selezionare specifici records.
+Ricordiamo che la visualizzazione indica sempre l'azione più avanzata nel tempo, anche se esistono azioni intermedie tra la data odierna e quella più avanzata.
+Anche nel caso esistano solo azioni con data precedente all'odierna verranno comunque visualizzate.
+Ogni riga è presentata nel colore assegnato al processo.
+Ricordiamo che puntando il mouse verrano visualizzate informazioni relative alla colonna corrente.
+In particolare:
+Colonna 1*: Icona > qualifica del contatto
+Colonna 2: Cliente > indirizzo e telefono
+Colonna 3: Agente (o Indirizzo)
+Colonna 4: Città > indirizzo e telefono
+Colonna 5: Data
+Colonna 6: Azione > eventuali note inserite
+Colonna 7**: Icona se presente un modulo associato 
+
+*cliccando sull'icona è possibile modificare direttamente la qualifica del contatto dallo status
+**cliccando sull'icona è possibile accedere direttamente al modulo associato
+
+SELEZIONE RIGA
+----------------------------------------------------------------------------------------------
+Cliccando con il mouse su una riga verrà automaticamente visualizzato a destra la scheda di dettaglio
+delle attività commerciali effettuate o da effettuare.
+E' importante sottolineare che dallo status è praticamente possibile accedere a tutte le informazioni 
+delle attività svolte.
+
+TIPOLOGIA DEI FILTRI
+----------------------------------------------------------
+I filtri previsti sono:
+
+- ricerca per nome (anche parziale):
+	Es. digitando ROS verranno visualizzati i contatti che contengono nel nome (azienda o cognome) la stringa ROS (ROSSI, ROSSA, ROSPINI ecc.)
+
+- per agente (riservato a Ufficio Commerciale e Affiliati): selezionare dalla lista 
+
+- per gruppo: filtro per gruppo di agenti (Ufficio Commerciale) o per gruppo di controllo (se l'utente ha dei gruppi di controllo o se è un affiliato);
+
+- per processo
+
+- per periodo (dal / al)
+
+Ricordiamo che i filtri inseriti sono di tipo AND (e) e quindi quanti più filtri verranno impostati tanto maggiore è la possibilità di restringere il numero di records visualizzati.
+
+DETTAGLIO COMMERCIALE
+---------------------------------------------------------------------------------
+Per Dettaglio Commerciale è da intendersi la colonna a destra dello status operativo e rappresenta
+lo storico delle attività commerciali del cliente selezionato dalla lista a destra.
+Nella parte superiore vengono visualizzati i dati anagrafici completi di indirizzo, telefono ed email.
+Nel box sottostante c'è il dettaglio di ogni singola azione.
+La lista sottostante rappresenta la lista delle azioni commerciali svolte/da svolgere.
+Cliccando su una riga si accede al dettaglio delle relative informazioni.
+Da questa maschera è possibile inserire/modificare le azioni.
+Le informazioni minime da inserire per poter salvare un nuovo processo sono:
+- l'azione 
+- la data
+- l'ora
+
+Esistono inoltre restrizioni in riferimento ai processi che ogni singolo gruppo/utente può visualizzare e quindi anche inserire/modificare
+Queste limitazioni sono gestite dalla maschera di Setup > Processi dell'Amministratore di sistema.
+E' possibile assegnare ai 4 livelli di gruppo previsti dal sistema la possibilità di visualizzare/gestire il processo.
+
+Ad esempio il commerciale potrà inserire i processi di cui ha i poteri di inserimento modifica.
+In questo caso specifico il commerciale non potrà comunque modificare un processo inserito cambiando il tipo di azione, ma potrà solo modificare alcune informazioni quali data, ora, note, documenti.
+
+Alcuni processi hanno una gestione dedicata ed in particolare:
+- Richiesta di Offerta: è vincolata all'esistenza di una data di Presentazione Offerta che sia superiore alle ore definite nella tabella processi nella colonna Timer. Questo significa che sarà possibile inserire una nuova Richiesta di Offerta solo se questa condizione è soddisfatta. In questo caso il processo richiede anche la compilazione di un modulo ad esso collegato. Nel caso il modulo non venga compilato e quindi salvato, non sarà possibile inserire una Richiesta di Offerta.
+
+
