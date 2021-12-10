@@ -1,5 +1,5 @@
-<cfinvoke component="plan.plan" method="getGruppiAgenti" returnvariable="rsGruppiAgenti"></cfinvoke>
-<cfinvoke component="plan.plan" method="getAgenti" returnvariable="rsAgenti"></cfinvoke>
+<cfinvoke component="//plan.plan" method="getGruppiAgenti" returnvariable="rsGruppiAgenti"></cfinvoke>
+<cfinvoke component="//plan.plan" method="getAgenti" returnvariable="rsAgenti"></cfinvoke>
 <cfinvoke component="status.status" method="getProcessi" returnvariable="rsProcessi"></cfinvoke>
 <cfoutput>
 <cfajaximport>
