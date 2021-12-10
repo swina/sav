@@ -14,7 +14,7 @@ document.write("<link rel='stylesheet' type='text/css' href='"+_js_prefix+"calen
 
 /**
 *	@desc: calendar editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_calendar(cell){

@@ -6,9 +6,9 @@ You allowed to use this component or parts of it under GPL terms
 To use it on other terms or get Professional edition of the component please contact us at sales@dhtmlx.com
 */
 /**
-*	@desc: dhtmlxGrid cell object constructor (shouldn't be accesed directly. Use cells and cells2 methods of the grid instead)
+*	@desc: dhtmlxgrid cell object constructor (shouldn't be accesed directly. Use cells and cells2 methods of the grid instead)
 *	@type: cell
-*	@returns: dhtmlxGrid cell
+*	@returns: dhtmlxgrid cell
 */
 function dhtmlXGridCellObject(obj){
 	/**
@@ -323,8 +323,8 @@ dhtmlXGridCellObject.prototype.getMath=function(){
 }
 
 /**
-*	@desc: dhtmlxGrid cell editor constructor (base for all eXcells). Shouldn't be accessed directly
-*	@returns: dhtmlxGrid cell editor object
+*	@desc: dhtmlxgrid cell editor constructor (base for all eXcells). Shouldn't be accessed directly
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell(){
@@ -377,7 +377,7 @@ eXcell.prototype=new dhtmlXGridCellObject;
 
 /**
 *	@desc: simple text editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_ed(cell){
@@ -441,7 +441,7 @@ eXcell_ed.prototype=new eXcell;
 
 /**
 *	@desc: pure text editor ( HTML not supported )
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_edtxt(cell){
@@ -473,7 +473,7 @@ eXcell_edtxt.prototype=new eXcell_ed;
 //#ch_excell:04062008{
 /**
 *	@desc: checkbox editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_ch(cell){
@@ -580,7 +580,7 @@ eXcell_ch.prototype.setValue=function(val){
 //#ra_excell:04062008{
 /**
 *	@desc: radio editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_ra(cell){
@@ -679,7 +679,7 @@ eXcell_ra.prototype.setValue=function(val){
 //#txt_excell:04062008{
 /**
 *	@desc: multilene popup editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_txt(cell){
@@ -789,7 +789,7 @@ eXcell_txt.prototype=new eXcell;
 
 /**
 *	@desc: multiline text editor without HTML support
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_txttxt(cell){
@@ -838,7 +838,7 @@ eXcell_txt.prototype.setValue=function(val){
 //#co_excell:04062008{
 /**
 *	@desc: combobox editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_co(cell){
@@ -1042,7 +1042,7 @@ eXcell_co.prototype.setValue=function(val){
 }
 /**
 *	@desc: selectbox editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_coro(cell){
@@ -1098,7 +1098,7 @@ eXcell_corotxt.prototype=new eXcell_cotxt;
 //#cp_excell:04062008{
 /**
 *	@desc: color picker editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_cp(cell){
@@ -1192,7 +1192,7 @@ eXcell_cp.prototype.setValue=function(val){
 //#img_excell:04062008{
 /**
 *	@desc: image editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 /*
@@ -1259,7 +1259,7 @@ eXcell_img.prototype.setValue=function(val){
 //#price_excell:04062008{
 /**
 *	@desc: text editor with price (USD) formatting
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_price(cell){
@@ -1290,7 +1290,7 @@ eXcell_price.prototype.setValue=function(val){
 //#dyn_excells:04062008{
 /**
 *	@desc: text editor with additional formatting for positive and negative numbers (arrow down/up and color)
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_dyn(cell){
@@ -1327,7 +1327,7 @@ eXcell_dyn.prototype.setValue=function(val){
 
 /**
 *	@desc: readonly editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_ro(cell){
@@ -1374,7 +1374,7 @@ eXcell_ron.prototype.setValue=function(val){
 
 /**
 *	@desc: readonly pure text editor (without HTML support)
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_rotxt(cell){
@@ -1407,7 +1407,7 @@ eXcell_rotxt.prototype=new eXcell;
 /**
 	*	@desc: combobox object constructor (shouldn't be accessed directly - instead please use getCombo(...) method of the grid)
 	*	@type: private
-	*	@returns: combobox for dhtmlxGrid
+	*	@returns: combobox for dhtmlxgrid
 	*/
 function dhtmlXGridComboObject(){
 	this.keys=new dhtmlxArray();

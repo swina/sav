@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
-		<title>Attach dhtmlxGrid to Accordion</title>
+		<title>Attach dhtmlxgrid to Accordion</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="title" content="Samples" />
 		<meta name="keywords" content="" />
@@ -32,7 +32,7 @@
                 <a href="./index.html" class="navigation"><img src="../common/icons/none.gif" alt="" >Integration with Components</a>
             </div>
             <div style="display:block;">
-                <h3>Attach dhtmlxGrid to Accordion</h3>
+                <h3>Attach dhtmlxgrid to Accordion</h3>
             </div>
             <div class="navigation-div">
                 <a href="#code" class="navigation view-source"><img src="../common/icons/source.gif" alt="" >View page source</a>
@@ -44,10 +44,10 @@
 	<script src="../../codebase/dhtmlxcontainer.js"></script>
 	
 	
-	<script src="../../../dhtmlxGrid/codebase/dhtmlxgrid.js"></script>
-	<script src="../../../dhtmlxGrid/codebase/dhtmlxgridcell.js"></script>
-	<link rel="stylesheet" type="text/css" href="../../../dhtmlxGrid/codebase/dhtmlxgrid.css">
-	<link rel="stylesheet" type="text/css" href="../../../dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
+	<script src="../../../dhtmlxgrid/codebase/dhtmlxgrid.js"></script>
+	<script src="../../../dhtmlxgrid/codebase/dhtmlxgridcell.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../../dhtmlxgrid/codebase/dhtmlxgrid.css">
+	<link rel="stylesheet" type="text/css" href="../../../dhtmlxgrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
 
 
 <div id="accordObj" style="position: relative; width: 320px; height: 400px;"></div>
@@ -56,14 +56,14 @@
 var dhxAccord;
 function init(){
 	dhxAccord = new dhtmlXAccordion("accordObj");
-	dhxAccord.addItem("a1", "dhtmlxGrid");
+	dhxAccord.addItem("a1", "dhtmlxgrid");
 	dhxAccord.addItem("a2", "b");
 	dhxAccord.addItem("a3", "c");
 	dhxAccord.openItem("a1");
 	//
 	var grid = dhxAccord.cells("a1").attachGrid();
 	grid.setSkin("dhx_skyblue");
-	grid.setImagePath("../../../dhtmlxGrid/codebase/imgs/");
+	grid.setImagePath("../../../dhtmlxgrid/codebase/imgs/");
 	grid.loadXML("../../../dhtmlxWindows/samples/common/grid.xml");
 }
 </script>
@@ -78,23 +78,23 @@ function init(){
 </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">link</span><span class="hl-code"> </span><span class="hl-var">rel</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">stylesheet</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">text/css</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../codebase/skins/dhtmlxaccordion_dhx_skyblue.css</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-code">
 </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">script</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../codebase/dhtmlxcontainer.js</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span><span class="hl-code">
  
-</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">script</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxGrid/codebase/dhtmlxgrid.js</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span><span class="hl-code">
-</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">script</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxGrid/codebase/dhtmlxgridcell.js</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span><span class="hl-code">
-</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">link</span><span class="hl-code"> </span><span class="hl-var">rel</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">stylesheet</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">text/css</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxGrid/codebase/dhtmlxgrid.css</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-code">
-</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">link</span><span class="hl-code"> </span><span class="hl-var">rel</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">stylesheet</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">text/css</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">script</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxgrid/codebase/dhtmlxgrid.js</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">script</span><span class="hl-code"> </span><span class="hl-var">src</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxgrid/codebase/dhtmlxgridcell.js</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">link</span><span class="hl-code"> </span><span class="hl-var">rel</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">stylesheet</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">text/css</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxgrid/codebase/dhtmlxgrid.css</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-code">
+</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">link</span><span class="hl-code"> </span><span class="hl-var">rel</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">stylesheet</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">text/css</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">href</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxgrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-code">
  
 </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">div</span><span class="hl-code"> </span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">accordObj</span><span class="hl-quotes">&quot;</span><span class="hl-code"> </span><span class="hl-var">style</span><span class="hl-code">=</span><span class="hl-quotes">&quot;</span><span class="hl-string">position: relative; width: 320px; height: 400px;</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">&gt;</span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">div</span><span class="hl-brackets">&gt;</span><span class="hl-code">
 </span><span class="hl-brackets">&lt;</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span><span class="hl-code"><div class="hl-main"><pre><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">dhxAccord</span><span class="hl-code">;
 </span><span class="hl-reserved">function</span><span class="hl-code"> </span><span class="hl-identifier">init</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
     </span><span class="hl-identifier">dhxAccord</span><span class="hl-code"> = </span><span class="hl-reserved">new</span><span class="hl-code"> </span><span class="hl-identifier">dhtmlXAccordion</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">accordObj</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
-    </span><span class="hl-identifier">dhxAccord</span><span class="hl-code">.</span><span class="hl-identifier">addItem</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">a1</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">dhtmlxGrid</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">dhxAccord</span><span class="hl-code">.</span><span class="hl-identifier">addItem</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">a1</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">dhtmlxgrid</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
     </span><span class="hl-identifier">dhxAccord</span><span class="hl-code">.</span><span class="hl-identifier">addItem</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">a2</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">b</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
     </span><span class="hl-identifier">dhxAccord</span><span class="hl-code">.</span><span class="hl-identifier">addItem</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">a3</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">c</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
     </span><span class="hl-identifier">dhxAccord</span><span class="hl-code">.</span><span class="hl-identifier">openItem</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">a1</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
     </span><span class="hl-comment">//</span><span class="hl-comment">;</span><span class="hl-comment"></span><span class="hl-code">
     </span><span class="hl-reserved">var</span><span class="hl-code"> </span><span class="hl-identifier">grid</span><span class="hl-code"> = </span><span class="hl-identifier">dhxAccord</span><span class="hl-code">.</span><span class="hl-identifier">cells</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">a1</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">.</span><span class="hl-identifier">attachGrid</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">;
     </span><span class="hl-identifier">grid</span><span class="hl-code">.</span><span class="hl-identifier">setSkin</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">dhx_skyblue</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
-    </span><span class="hl-identifier">grid</span><span class="hl-code">.</span><span class="hl-identifier">setImagePath</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxGrid/codebase/imgs/</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-identifier">grid</span><span class="hl-code">.</span><span class="hl-identifier">setImagePath</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxgrid/codebase/imgs/</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
     </span><span class="hl-identifier">grid</span><span class="hl-code">.</span><span class="hl-identifier">loadXML</span><span class="hl-brackets">(</span><span class="hl-quotes">&quot;</span><span class="hl-string">../../../dhtmlxWindows/samples/common/grid.xml</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">)</span><span class="hl-code">;
 </span><span class="hl-brackets">}</span></pre></div></span><span class="hl-brackets">&lt;/</span><span class="hl-reserved">script</span><span class="hl-brackets">&gt;</span></pre></div>
         </div>

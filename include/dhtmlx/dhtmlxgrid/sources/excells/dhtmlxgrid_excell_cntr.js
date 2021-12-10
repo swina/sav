@@ -6,7 +6,7 @@ You allowed to use this component or parts of it under GPL terms
 To use it on other terms or get Professional edition of the component please contact us at sales@dhtmlx.com
 */
 /*
-Counter eXcell v.1.0  for dhtmlxGrid 
+Counter eXcell v.1.0  for dhtmlxgrid 
 (c)DHTMLX LTD. 2005
 
 
@@ -15,7 +15,7 @@ The corresponding  cell value in XML can contain any value (it is ignored)
 */
 /**
 *	@desc: auto counter editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_cntr(cell){

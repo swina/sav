@@ -132,7 +132,7 @@ After the initialization:
 The initialization by a <acronym title="Cascading Style Sheets">CSS</acronym> class will work only for those tables that were on page at the moment of loading. If the page was created dynamically or loaded by some kind of <acronym title="Asynchronous JavaScript and XML">AJAX</acronym>, only the direct initialization method can be used.
 
 </p>
-<pre class="code html4strict">      <span class="sc2">&lt;<a href="https://december.com/html/4/element/table.html"><span class="kw2">table</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;some_table&quot;</span> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span>&gt;</span>
+<pre class="code html4strict">      <span class="sc2">&lt;<a href="https://december.com/html/4/element/table.html"><span class="kw2">table</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;some_table&quot;</span> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span>&gt;</span>
           <span class="sc2">&lt;<a href="https://december.com/html/4/element/tr.html"><span class="kw2">tr</span></a>&gt;</span>
               <span class="sc2">&lt;<a href="https://december.com/html/4/element/td.html"><span class="kw2">td</span></a>&gt;</span>Header A<span class="sc2">&lt;<span class="sy0">/</span><a href="https://december.com/html/4/element/td.html"><span class="kw2">td</span></a>&gt;&lt;<a href="https://december.com/html/4/element/td.html"><span class="kw2">td</span></a>&gt;</span>Header B<span class="sc2">&lt;<span class="sy0">/</span><a href="https://december.com/html/4/element/td.html"><span class="kw2">td</span></a>&gt;</span>
           <span class="sc2">&lt;<span class="sy0">/</span><a href="https://december.com/html/4/element/tr.html"><span class="kw2">tr</span></a>&gt;</span>
@@ -151,7 +151,7 @@ The initialization by a <acronym title="Cascading Style Sheets">CSS</acronym> cl
 The first row of the table will be used for grid headers. The user can apply some attributes to define properties of grid&#039;s columns (all of them are optional).
 
 </p>
-<pre class="code html4strict">      <span class="sc2">&lt;<a href="https://december.com/html/4/element/table.html"><span class="kw2">table</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span>&gt;</span>
+<pre class="code html4strict">      <span class="sc2">&lt;<a href="https://december.com/html/4/element/table.html"><span class="kw2">table</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span>&gt;</span>
           <span class="sc2">&lt;<a href="https://december.com/html/4/element/tr.html"><span class="kw2">tr</span></a>&gt;</span>
              <span class="sc2">&lt;<a href="https://december.com/html/4/element/td.html"><span class="kw2">td</span></a> <span class="kw3">width</span><span class="sy0">=</span><span class="st0">&quot;150&quot;</span> <span class="kw3">align</span><span class="sy0">=</span><span class="st0">&quot;left&quot;</span>&gt;</span>Column 1<span class="sc2">&lt;<span class="sy0">/</span><a href="https://december.com/html/4/element/td.html"><span class="kw2">td</span></a>&gt;</span>
              <span class="sc2">&lt;<a href="https://december.com/html/4/element/td.html"><span class="kw2">td</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;co&quot;</span> sort<span class="sy0">=</span><span class="st0">&quot;str&quot;</span>&gt;</span>Column 2<span class="sc2">&lt;<span class="sy0">/</span><a href="https://december.com/html/4/element/td.html"><span class="kw2">td</span></a>&gt;</span>
@@ -187,17 +187,17 @@ Some grid modes can be enabled directly from source table attributes:
 
 </p>
 <pre class="code javascript">          <span class="co1">//enable drag-and-drop in the grid  </span>
-      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span> dragAndDrop<span class="sy0">=</span><span class="st0">&quot;true&quot;</span> 
+      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span> dragAndDrop<span class="sy0">=</span><span class="st0">&quot;true&quot;</span> 
           <span class="co1">//set path to the image folder of the grid</span>
-      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span> imgpath<span class="sy0">=</span><span class="st0">&quot;../some/..&quot;</span>  
+      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span> imgpath<span class="sy0">=</span><span class="st0">&quot;../some/..&quot;</span>  
           <span class="co1">//enable multi-line mode in the grid</span>
-      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span> multiline<span class="sy0">=</span><span class="st0">&quot;true&quot;</span>  
+      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span> multiline<span class="sy0">=</span><span class="st0">&quot;true&quot;</span>  
           <span class="co1">//enable light mouse navigation mode</span>
-      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span> lightnavigation<span class="sy0">=</span><span class="st0">&quot;true&quot;</span>
+      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span> lightnavigation<span class="sy0">=</span><span class="st0">&quot;true&quot;</span>
           <span class="co1">//enables the alter CSS mode (it is equal to grid.enableAlterCss(&quot;someA&quot;,&quot;someB&quot;))  </span>
-      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span> unevenrow<span class="sy0">=</span><span class="st0">&quot;someA&quot;</span> evenrow<span class="sy0">=</span><span class="st0">&quot;someB&quot;</span>
+      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span> unevenrow<span class="sy0">=</span><span class="st0">&quot;someA&quot;</span> evenrow<span class="sy0">=</span><span class="st0">&quot;someB&quot;</span>
           <span class="co1">//enables the split mode</span>
-      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span> split<span class="sy0">=</span><span class="st0">&quot;2&quot;</span>
+      <span class="sy0">&lt;</span>table <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span> split<span class="sy0">=</span><span class="st0">&quot;2&quot;</span>
 &nbsp;</pre>
 </div>
 
@@ -209,7 +209,7 @@ Some grid modes can be enabled directly from source table attributes:
 By default, the grid will take the same size as the table from which it was created. But the user can specify its size directly through source table attributes:
 
 </p>
-<pre class="code html4strict">      <span class="sc2">&lt;<a href="https://december.com/html/4/element/table.html"><span class="kw2">table</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span> gridWidth<span class="sy0">=</span><span class="st0">&quot;600&quot;</span> gridHeight<span class="sy0">=</span><span class="st0">&quot;400&quot;</span></span>
+<pre class="code html4strict">      <span class="sc2">&lt;<a href="https://december.com/html/4/element/table.html"><span class="kw2">table</span></a> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span> gridWidth<span class="sy0">=</span><span class="st0">&quot;600&quot;</span> gridHeight<span class="sy0">=</span><span class="st0">&quot;400&quot;</span></span>
 &nbsp;</pre>
 <p>
 
@@ -266,7 +266,7 @@ When the grid is created by dhtmlXGridFromTable command, the reference to the gr
 In case of initialization by a <acronym title="Cascading Style Sheets">CSS</acronym> class, the user can define the name of the global variable that will be used as a reference:
 
 </p>
-<pre class="code htlm">    &lt;table class=&quot;dhtmlxGrid&quot; name=&quot;grid&quot;&gt;</pre>
+<pre class="code htlm">    &lt;table class=&quot;dhtmlxgrid&quot; name=&quot;grid&quot;&gt;</pre>
 <p>
 It allows to call any <acronym title="Application Programming Interface">API</acronym> method of such grid by:
 
@@ -282,7 +282,7 @@ It should be noted that the object becomes available only after initialization (
 It is possible to attach some custom code to the moment when grid&#039;s configuration is being initialized and to the moment when the grid has already been initialized:
 
 </p>
-<pre class="code javascript">    <span class="sy0">&lt;</span>table <span class="kw3">name</span><span class="sy0">=</span><span class="st0">&quot;grid&quot;</span> <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxGrid&quot;</span> onbeforeinit<span class="sy0">=</span><span class="st0">&quot;myfunc1()&quot;</span> oninit<span class="sy0">=</span><span class="st0">&quot;myfunc2()&quot;</span>
+<pre class="code javascript">    <span class="sy0">&lt;</span>table <span class="kw3">name</span><span class="sy0">=</span><span class="st0">&quot;grid&quot;</span> <span class="kw2">class</span><span class="sy0">=</span><span class="st0">&quot;dhtmlxgrid&quot;</span> onbeforeinit<span class="sy0">=</span><span class="st0">&quot;myfunc1()&quot;</span> oninit<span class="sy0">=</span><span class="st0">&quot;myfunc2()&quot;</span>
     ...
     <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
         <span class="kw2">function</span> myfunc1<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>

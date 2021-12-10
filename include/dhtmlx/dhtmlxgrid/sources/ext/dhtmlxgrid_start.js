@@ -152,7 +152,7 @@ dhtmlXGridObject.prototype._get_html_data=function(data,ind){
 dhtmlxEvent(window,"load",function(){
     var z=document.getElementsByTagName("table");
     for (var a=0; a<z.length; a++)
-        if (z[a].className=="dhtmlxGrid"){
+        if (z[a].className=="dhtmlxgrid"){
             dhtmlXGridFromTable(z[a]);
             //we have found IT!
         }

@@ -55,9 +55,9 @@ dhtmlxArray._master={
 }
 
 /**
-*   @desc: dhtmlxGrid constructor
+*   @desc: dhtmlxgrid constructor
 *   @param: id - (optional) id of div element to base grid on
-*   @returns: dhtmlxGrid object
+*   @returns: dhtmlxgrid object
 *   @type: public
 */
 function dhtmlXGridObject(id){

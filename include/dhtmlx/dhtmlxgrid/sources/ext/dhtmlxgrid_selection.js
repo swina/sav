@@ -124,7 +124,7 @@ dhtmlXGridObject.prototype._OnSelectionMove = function(event)
  		this._endSelectionCell  = this._startSelectionCell = this.getFirstParentOfType(event.srcElement || event.target,"TD");		
 	else
 		if (event.srcElement || event.target) {
-			if ((event.srcElement || event.target).className == "dhtmlxGrid_selection")
+			if ((event.srcElement || event.target).className == "dhtmlxgrid_selection")
 				this._endSelectionCell=(this._getCellByPos(X,Y)||this._endSelectionCell);
 			else {
 				var t = this.getFirstParentOfType(event.srcElement || event.target,"TD");
@@ -271,7 +271,7 @@ dhtmlXGridObject.prototype._CreateSelection = function(x, y)
 		var div = document.createElement('div');
 		div.style.position = 'absolute';
         div.style.display = 'none';
-        div.className = 'dhtmlxGrid_selection';
+        div.className = 'dhtmlxgrid_selection';
 		this._selectionObj = div;
 		this._selectionObj.onmousedown = function(e){
 			e=e||event;

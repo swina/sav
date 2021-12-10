@@ -474,7 +474,7 @@ dataProcessor.prototype={
 	
 	/**
 	* 	@desc: initializes data-processor
-	*	@param: anObj - dhtmlxGrid object to attach this data-processor to
+	*	@param: anObj - dhtmlxgrid object to attach this data-processor to
 	*	@type: public
 	*/
 	init:function(anObj){

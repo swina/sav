@@ -7,7 +7,7 @@ To use it on other terms or get Professional edition of the component please con
 */
 /**
 *	@desc: skined checkbox editor 
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 function eXcell_acheck(cell){

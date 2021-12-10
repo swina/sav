@@ -9,7 +9,7 @@
 	<item id="products" text="Products">
 		<href target="blank"><![CDATA[https://dhtmlx.com/docs/products/index.shtml]]></href>
 		<item id="dhtmlxTree" text="dhtmlxTree" img="https://dhtmlx.com/images/menues/img_tree.gif"><href target="blank"><![CDATA[https://dhtmlx.com/docs/products/dhtmlxTree/index.shtml]]></href></item>
-		<item id="dhtmlxGrid" text="dhtmlxGrid" img="https://dhtmlx.com/images/menues/img_grid.gif"><href target="blank"><![CDATA[https://dhtmlx.com/docs/products/dhtmlxGrid/index.shtml]]></href></item>
+		<item id="dhtmlxgrid" text="dhtmlxgrid" img="https://dhtmlx.com/images/menues/img_grid.gif"><href target="blank"><![CDATA[https://dhtmlx.com/docs/products/dhtmlxgrid/index.shtml]]></href></item>
 		<item id="dhtmlxTreeGrid" text="dhtmlxTreeGrid" img="https://dhtmlx.com/images/menues/img_treegrid.gif"><href target="blank"><![CDATA[https://dhtmlx.com/docs/products/dhtmlxTreeGrid/index.shtml]]></href></item>
 		<item id="dhtmlxWindows" text="dhtmlxWindows" img="https://dhtmlx.com/images/menues/img_wins.gif"><href target="blank"><![CDATA[https://dhtmlx.com/docs/products/dhtmlxWindows/index.shtml]]></href></item>
 		<item id="dhtmlxLayout" text="dhtmlxLayout" img="https://dhtmlx.com/images/menues/img_layout.gif"><href target="blank"><![CDATA[https://dhtmlx.com/docs/products/dhtmlxLayout/index.shtml]]></href></item>

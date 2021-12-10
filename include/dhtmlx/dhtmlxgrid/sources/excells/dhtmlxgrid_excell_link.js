@@ -7,7 +7,7 @@ To use it on other terms or get Professional edition of the component please con
 */
 
 /*
-HTML Link eXcell v.1.0  for dhtmlxGrid 
+HTML Link eXcell v.1.0  for dhtmlxgrid 
 (c)DHTMLX LTD. 2005
 
 
@@ -24,7 +24,7 @@ Samples:
 
 /**
 *	@desc: link editor
-*	@returns: dhtmlxGrid cell editor object
+*	@returns: dhtmlxgrid cell editor object
 *	@type: public
 */
 

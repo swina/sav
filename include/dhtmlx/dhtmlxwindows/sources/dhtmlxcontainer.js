@@ -494,7 +494,7 @@ function dhtmlXContainer(obj) {
 		if (this._doOnAttachToolbar) this._doOnAttachToolbar("unload");
 	}
 	/**
-	*   @desc: attaches a dhtmlxGrid to a window
+	*   @desc: attaches a dhtmlxgrid to a window
 	*   @type: public
 	*/
 	this.obj.attachGrid = function() {
