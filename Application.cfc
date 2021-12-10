@@ -34,7 +34,7 @@
 		hint="Fires when the application is first created.">
 		<cfset application.dhtmlxurl = "https://savcrm.moodgiver.com/sav/include/dhtmlx">
 		<cfset application.dsn = "savenergy">
-		
+		<cfset application.hostname = "savcrm.moodgiver.com">
 		<!--- Return out. --->
 		<cfreturn true />
 	</cffunction>

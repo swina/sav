@@ -73,7 +73,7 @@
 	<br><br>
 	<input type="button" class="btn btn-delete-event" value="Delete"><input type="button" class="btn btn-add-event" value="Salva">
 	<cfoutput>
-	<input type="hidden" name="url_host" id="url_host" value="#http_host#">
+	<input type="hidden" name="url_host" id="url_host" value="#application.hostname#">
 	</cfoutput>
 </div>
 </body>

@@ -4,7 +4,7 @@
 	<link rel='stylesheet' type='text/css' href='../include/css/style.css'>
 	<cfoutput>
 	<script type="text/javascript">
-    	var GB_ROOT_DIR = "https://#http_host#/crm/include/greybox/";
+    	var GB_ROOT_DIR = "https://#application.hostname#/crm/include/greybox/";
 	</script>
 	</cfoutput>
 	<script type="text/javascript" src="../include/greybox/AJS.js"></script>
