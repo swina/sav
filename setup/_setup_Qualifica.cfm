@@ -6,12 +6,12 @@
 	<script src="../include/js/functions.js"></script>
 	<script src="setup.js"></script>
 	<!--- GRID --->
-	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgrid.css">
-    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxcommon.js"></script>
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgrid.js"></script>
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgridcell.js"></script>
-	<script  src="../include/dhtmlx/dhtmlxGrid/codebase/ext/dhtmlxgrid_start.js"></script>
+	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgrid.css">
+    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxgrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxcommon.js"></script>
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgrid.js"></script>
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgridcell.js"></script>
+	<script  src="../include/dhtmlx/dhtmlxgrid/codebase/ext/dhtmlxgrid_start.js"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 <script>
 
 mygrid = new dhtmlXGridObject('gridbox');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");
 mygrid.setHeader("Qualifica,Icona");
 mygrid.setInitWidths("300,*");
 mygrid.setColAlign("left,center");

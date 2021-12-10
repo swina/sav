@@ -37,7 +37,7 @@
 <cfoutput>
 <script>
 mygrid = new dhtmlXGridObject('gridbox');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid.setHeader("Rag.Sociale , Fornitore, Indirizzo, Citt�,Prov,&raquo;,Q");//set column names
 mygrid.setInitWidths("150,100,200,150,40,30,30");//set column width in px
 mygrid.setColAlign("left,left,left,left,left,center,left");//set column values align 	

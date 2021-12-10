@@ -94,7 +94,7 @@ function date_custom(a,b,order){
 
 //inizializza la grid status
 mygrid = new dhtmlXGridObject('status');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 <cfif session.livello NEQ 3 OR StructFind(session.userlogin,"gruppi_controllo") NEQ "">
 	mygrid.setHeader("&raquo;,Cliente,Agente,Citt�,Data,Azione,&raquo;");//set column names
 <cfelse>
@@ -121,7 +121,7 @@ mygrid.attachEvent("onXLE", doOnRebuild);
 
 //inizializza la grid della cronologia eventi di un cliente
 mygrid2 = new dhtmlXGridObject('gridboxCLIENTE');
-mygrid2.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid2.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid2.setHeader("Data,Ora,Azione,id");//set column names
 mygrid2.setInitWidths("80,45,*,1");//set column width in px
 mygrid2.setColAlign("left,left,left,left");//set column values align

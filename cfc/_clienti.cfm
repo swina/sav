@@ -75,7 +75,7 @@
 <!--- <cfdump var="#xmlString#">--->
 <script>
 mygrid = new dhtmlXGridObject('gridbox');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid.setHeader("ID, Cliente , Cognome, Nome,M,P");//set column names
 mygrid.setInitWidths("50,200,150,150,50,50");//set column width in px
 mygrid.setColAlign("right,left,left,left,center,center");//set column values align 	

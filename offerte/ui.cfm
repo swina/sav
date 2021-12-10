@@ -60,7 +60,7 @@ initCalendar();
 <script>
 mygrid = new dhtmlXGridObject('gridbox');
 mygrid.selMultiRows = true;
-mygrid.imgURL = "../include/dhtmlx/dhtmlxGrid/codebase/imgs/icons_greenfolders/";
+mygrid.imgURL = "../include/dhtmlx/dhtmlxgrid/codebase/imgs/icons_greenfolders/";
 mygrid.setHeader("Processo,Data/Ora,Agente,Cliente,&raquo,Ufficio Tecnico");
 mygrid.setInitWidths("150,80,120,150,30,*");
 mygrid.setColTypes("ro,ro,ro,ro,img,coro");
@@ -75,7 +75,7 @@ mygrid.setSkin("dhx_skyblue");
 mygrid.load("_offerteXML.cfm");
 
 mygrid2 = new dhtmlXGridObject('gridModulo');
-mygrid2.imgURL = "../include/dhtmlx/dhtmlxGrid/codebase/imgs/icons_greenfolders/";
+mygrid2.imgURL = "../include/dhtmlx/dhtmlxgrid/codebase/imgs/icons_greenfolders/";
 mygrid2.setHeader("Campo,Valore");
 mygrid2.setInitWidths("150,*");
 mygrid2.setColTypes("ro,ro");

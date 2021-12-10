@@ -20,7 +20,7 @@
 <script>
 mygrid = new dhtmlXGridObject('gridbox');
 mygrid.selMultiRows = true;
-mygrid.imgURL = "../include/dhtmlx/dhtmlxGrid/codebase/imgs/icons_greenfolders/";
+mygrid.imgURL = "../include/dhtmlx/dhtmlxgrid/codebase/imgs/icons_greenfolders/";
 mygrid.setHeader("Gruppo");
 mygrid.setColTypes("ro");
 mygrid.setColAlign("left");//set column values align 	
@@ -36,7 +36,7 @@ mygrid.attachEvent("onXLE", doSelectRow);
 
 //inizializza la grid della cronologia eventi di un cliente
 mygrid2 = new dhtmlXGridObject('gridboxUTENTI');
-mygrid2.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid2.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid2.setHeader("Cognome,Nome,Email,Clienti,LOGIN,Password,Sospeso,Assegnazione");//set column names
 mygrid2.setInitWidths("100,100,250,50,80,80,80,*");//set column width in px
 mygrid2.setColAlign("left,left,left,right,left,left,left,left");//set column values align

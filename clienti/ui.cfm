@@ -80,7 +80,7 @@ doSetDates();
 <cfoutput>
 <script>
 mygrid = new dhtmlXGridObject('gridbox');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid.setHeader("Rag.Sociale , Indirizzo, Citt�,Prov,&raquo;,Q,Agente,Registrato,Fornitore");//set column names
 mygrid.setInitWidths("150,200,150,40,30,30,80,80,*");//set column width in px
 mygrid.setColAlign("left,left,left,left,center,left,left,left,left");//set column values align 	

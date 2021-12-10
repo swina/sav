@@ -7,12 +7,12 @@
 	<script src="status.js"></script>
 	
 	<!--- GRID --->
-	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgrid.css">
-    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxcommon.js"></script>
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgrid.js"></script>
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgridcell.js"></script>
-	<script  src="../include/dhtmlx/dhtmlxGrid/codebase/ext/dhtmlxgrid_start.js"></script>
+	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgrid.css">
+    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxgrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxcommon.js"></script>
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgrid.js"></script>
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgridcell.js"></script>
+	<script  src="../include/dhtmlx/dhtmlxgrid/codebase/ext/dhtmlxgrid_start.js"></script>
 	<!--- 
 	<!--- WINDOW --->
 	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxwindows/codebase/dhtmlxwindows.css">
@@ -185,7 +185,7 @@
 		font-family:Tahoma;
 		font-size:11px;
 		color:black ; 
-		padding:4px;  	background-image:url('../include/dhtmlx/dhtmlxGrid/codebase/imgs/sky_blue_grid.gif');
+		padding:4px;  	background-image:url('../include/dhtmlx/dhtmlxgrid/codebase/imgs/sky_blue_grid.gif');
 		border : 1px #96c6d3 solid;
 	}
 	
@@ -247,7 +247,7 @@
 <script>
 //inizializza la grid status
 mygrid = new dhtmlXGridObject('gridboxSTATUS');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid.setHeader("Cliente,Ag,Citta,Data,Azione,&raquo;");//set column names
 mygrid.setInitWidths("100,100,100,70,*,25");//set column width in px
 mygrid.setColAlign("left,left,left,left,left,right");//set column values align
@@ -260,7 +260,7 @@ mygrid.load("_statusXML.cfm");
 
 //inizializza la grid della cronologia eventi di un cliente
 mygrid2 = new dhtmlXGridObject('gridboxCLIENTE');
-mygrid2.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid2.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid2.setHeader("Data,Ora,Azione");//set column names
 mygrid2.setInitWidths("70,50,*");//set column width in px
 mygrid2.setColAlign("left,left,left");//set column values align
@@ -273,7 +273,7 @@ mygrid2.setSkin("dhx_skyblue");//set grid skin
 
 //inizializza la grid dell'elenco agenti
 /*mygrid3 = new dhtmlXGridObject('gridboxAGENTI');
-mygrid3.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid3.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid3.setHeader("ID,Agente");//set column names
 mygrid3.setInitWidths("70,*");//set column width in px
 mygrid3.setColAlign("left,left");//set column values align

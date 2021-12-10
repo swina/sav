@@ -17,12 +17,12 @@
 	<script type="text/javascript" src="../include/greybox/gb_scripts.js"></script>
 	<link href="../include/greybox/gb_styles.css" rel="stylesheet" type="text/css" />
 	<!--- GRID --->
-	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgrid.css">
-    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxcommon.js"></script>
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgrid.js"></script>
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgridcell.js"></script>
-	<script  src="../include/dhtmlx/dhtmlxGrid/codebase/ext/dhtmlxgrid_start.js"></script>
+	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgrid.css">
+    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxgrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxcommon.js"></script>
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgrid.js"></script>
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgridcell.js"></script>
+	<script  src="../include/dhtmlx/dhtmlxgrid/codebase/ext/dhtmlxgrid_start.js"></script>
 	<!--- CALENDAR --->	
 	<link rel="STYLESHEET" type="text/css" href="../include/dhtmlx/dhtmlxCalendar/codebase/dhtmlxcalendar.css">
 <!--- 	<script>
@@ -100,7 +100,7 @@ function date_custom(a,b,order){
 
 //inizializza la grid status
 mygrid = new dhtmlXGridObject('gridboxSTATUS');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 <cfif session.livello LT 3 OR StructFind(session.userlogin,"gruppi_controllo") NEQ "">
 	mygrid.setHeader("&raquo;,Cliente,Agente,Citt�,Data,Azione,&raquo;");//set column names
 <cfelse>
@@ -124,7 +124,7 @@ mygrid.attachEvent("onXLE", doOnRebuild);
 
 //inizializza la grid della cronologia eventi di un cliente
 mygrid2 = new dhtmlXGridObject('gridboxCLIENTE');
-mygrid2.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid2.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid2.setHeader("Data,Ora,Azione");//set column names
 mygrid2.setInitWidths("80,45,*");//set column width in px
 mygrid2.setColAlign("left,left,left");//set column values align

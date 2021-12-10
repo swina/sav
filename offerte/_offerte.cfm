@@ -13,7 +13,7 @@
 <script>
 mygrid = new dhtmlXGridObject('gridbox');
 mygrid.selMultiRows = true;
-mygrid.imgURL = "../include/dhtmlx/dhtmlxGrid/codebase/imgs/icons_greenfolders/";
+mygrid.imgURL = "../include/dhtmlx/dhtmlxgrid/codebase/imgs/icons_greenfolders/";
 mygrid.setHeader("Processo,Data/Ora,Agente,Cliente,&raquo;,&raquo;&raquo;");
 mygrid.setInitWidths("150,80,120,120,150,30,*");
 mygrid.setColTypes("ro,ro,ro,ro,img,coro,ro");

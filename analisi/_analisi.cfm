@@ -25,7 +25,7 @@
 <script>
 mygrid = new dhtmlXGridObject('gridbox');
 mygrid.selMultiRows = true;
-mygrid.imgURL = "../include/dhtmlx/dhtmlxGrid/codebase/imgs/icons_greenfolders/";
+mygrid.imgURL = "../include/dhtmlx/dhtmlxgrid/codebase/imgs/icons_greenfolders/";
 mygrid.setHeader("Processo,Nr.,GG,IPA,IPMG");
 mygrid.setInitWidths("150,60,60,60,*");
 mygrid.setColTypes("ro,ro,ro,ro,ro");
@@ -39,7 +39,7 @@ mygrid.load("_analisi_processiXML.cfm");
 //mygrid.attachEvent("onRowDblClicked", getGruppo);
 
 mygrid2 = new dhtmlXGridObject('gridboxDetail');
-mygrid2.imgURL = "../include/dhtmlx/dhtmlxGrid/codebase/imgs/icons_greenfolders/";
+mygrid2.imgURL = "../include/dhtmlx/dhtmlxgrid/codebase/imgs/icons_greenfolders/";
 mygrid2.setHeader("Agente,Processo,Nr.,GG,IPA,IPMG");
 mygrid2.setInitWidths("150,150,60,60,60,*");
 mygrid2.setColTypes("ro,ro,ro,ro,ro,ro");

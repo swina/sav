@@ -6,12 +6,12 @@
 	<script src="../include/js/functions.js"></script>
 	<script src="setup.js"></script>
 	<!--- GRID --->
-	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgrid.css">
-    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxcommon.js"></script>
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgrid.js"></script>
-    <script src="../include/dhtmlx/dhtmlxGrid/codebase/dhtmlxgridcell.js"></script>
-	<script  src="../include/dhtmlx/dhtmlxGrid/codebase/ext/dhtmlxgrid_start.js"></script>
+	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgrid.css">
+    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxgrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxcommon.js"></script>
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgrid.js"></script>
+    <script src="../include/dhtmlx/dhtmlxgrid/codebase/dhtmlxgridcell.js"></script>
+	<script  src="../include/dhtmlx/dhtmlxgrid/codebase/ext/dhtmlxgrid_start.js"></script>
 	<script src="../include/dhtmlx/dhtmlxcombo/codebase/dhtmlxcombo.js"></script>
     <link rel="STYLESHEET" type="text/css" href="../include/dhtmlx/dhtmlxcombo/codebase/dhtmlxcombo.css">
 
@@ -28,7 +28,7 @@
 <script>
 
 mygrid = new dhtmlXGridObject('gridbox');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");
 mygrid.setHeader("Processo,Sigla,Timer H,Auto,Colore,&raquo;,Modulo,&raquo;");
 mygrid.setInitWidths("200,100,60,55,50,20,*,20");
 mygrid.setColAlign("left,left,right,center,center,center,right,center");
@@ -45,7 +45,7 @@ mygrid.loadXML("_processiXML.cfm");
 
 //inizializza la grid della cronologia eventi di un cliente
 mygrid2 = new dhtmlXGridObject('gridboxPermission');
-mygrid2.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid2.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid2.setHeader("Direzione Commerciale.,Affiliati,Agenti,Ufficio Tecnico");//set column names
 //mygrid2.setInitWidths("60,60,60,60");//set column width in px
 mygrid2.setColAlign("center,center,center,center");//set column values align

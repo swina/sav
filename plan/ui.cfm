@@ -34,7 +34,7 @@ dhxLayout.setAutoSize("a;b", "a;b");
 <script>
 mygrid = new dhtmlXGridObject('gridbox');
 mygrid.selMultiRows = true;
-mygrid.imgURL = "../include/dhtmlx/dhtmlxGrid/codebase/imgs/icons_greenfolders/";
+mygrid.imgURL = "../include/dhtmlx/dhtmlxgrid/codebase/imgs/icons_greenfolders/";
 mygrid.setHeader("Processo,Data,Ora,Agente,Cliente,Fornitore,&raquo;,&raquo;");
 mygrid.setInitWidths("150,80,80,120,150,100,*,*");
 mygrid.setColTypes("ro,ro,ro,ro,ro,ro,img,coro");

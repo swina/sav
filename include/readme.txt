@@ -21,7 +21,7 @@ dhtmlxSuite package contains common documentation and samples browser for all co
 
 Directory structure:
 
-To start with some component please go down to its folder within the package. For example dhtmlxGrid.
+To start with some component please go down to its folder within the package. For example dhtmlxgrid.
 
 - "codebase" folder contains all stuff you need to work with grid. Javascript (.js) and style (.css) files in the root of codebase is a minimum set of files you need to start. 
 	- codebase/ext - extensions of basic functionality (basic is also quite wide) are in ext folder within "codebase".

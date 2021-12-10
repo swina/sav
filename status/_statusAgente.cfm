@@ -51,7 +51,7 @@
 <script>
 //inizializza la grid status
 mygrid = new dhtmlXGridObject('gridboxSTATUS');
-mygrid.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid.setHeader("Cliente,Citta,Indirizzo,Data,Azione,&raquo;");//set column names
 mygrid.setInitWidths("100,100,100,70,*,25");//set column width in px
 mygrid.setColAlign("left,left,left,left,left,right");//set column values align
@@ -70,7 +70,7 @@ mygrid.attachEvent("onXLE", doOnRebuild);
 
 //inizializza la grid della cronologia eventi di un cliente
 mygrid2 = new dhtmlXGridObject('gridboxCLIENTE');
-mygrid2.setImagePath("../include/dhtmlx/dhtmlxGrid/codebase/imgs/");//path to images required by grid
+mygrid2.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
 mygrid2.setHeader("&raquo;,Data,Ora,Azione");//set column names
 mygrid2.setInitWidths("*,60,45,120");//set column width in px
 mygrid2.setColAlign("left,left,left,left");//set column values align
