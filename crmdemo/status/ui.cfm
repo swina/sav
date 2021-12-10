@@ -1,0 +1,245 @@
+<cfinvoke component="status" method="getProcessi" returnvariable="myProcessi"></cfinvoke>
+<cfinvoke component="status" method="getModuli" returnvariable="moduli"></cfinvoke>
+<cfinvoke component="status" method="getAgenti" returnvariable="qryAgenti"></cfinvoke>
+<cfinvoke component="status" method="getGruppiAgenti" returnvariable="qryGruppi"></cfinvoke>
+<cfparam name="url.start" default=0>
+	<!--- LAYOUT APPLICAZIONE --->
+	<link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxlayout/codebase/dhtmlxlayout.css">
+    <link rel="stylesheet" type="text/css" href="../include/dhtmlx/dhtmlxlayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css">
+    <script src="../include/dhtmlx/dhtmlxLayout/codebase/dhtmlxcommon.js"></script>
+    <script src="../include/dhtmlx/dhtmlxLayout/codebase/dhtmlxcontainer.js"></script>
+    <script src="../include/dhtmlx/dhtmlxLayout/codebase/dhtmlxlayout.js"></script>
+	<script language="JavaScript" type="text/javascript">
+function doOnLoadHome(){
+var dhxLayout=new dhtmlXLayoutObject(document.body,"3L");
+//cell a (top)
+dhxLayout.items[0].setWidth(600);
+dhxLayout.items[0].hideHeader();
+dhxLayout.cells("a").setText("Status Operativo");
+dhxLayout.cells("a").attachObject("left");
+
+//cell b (sidebar)
+dhxLayout.items[1].setWidth(280);
+dhxLayout.items[1].hideHeader();
+dhxLayout.cells("b").attachObject("right");
+dhxLayout.cells("b").setText("right");
+
+dhxLayout.items[2].setWidth(280);
+dhxLayout.items[2].hideHeader();
+dhxLayout.cells("c").attachObject("rightBottom");
+dhxLayout.cells("c").setText("right");
+
+dhxLayout.setEffect("collapse",true);
+
+//dhxLayout.cells("a").fixSize(true, true);
+//dhxLayout.cells("b").fixSize(true, true);
+
+
+dhxLayout.setAutoSize("b;c;a","b;c;a");
+
+ cal1 = new dhtmlxCalendarObject('calInput1');
+		cal1.attachEvent("onClick", function(date) {
+        	calDeptDate(date,"calInput1");
+	    });
+		cal2 = new dhtmlxCalendarObject('dateFrom');
+		cal2.attachEvent("onClick", function(date) {
+        	calDeptDate(date,"dateFrom");
+	    });	
+		cal3 = new dhtmlxCalendarObject('dateTo');
+		cal3.attachEvent("onClick", function(date) {
+        	calDeptDate(date,"dateTo");
+	    });
+
+}
+</script>
+
+<div id="left" class="winblue" style="width:100%;height:100%;margin:0;overflow:auto;">
+	<div id="searchHeader" class="winblue" style="width:99%;margin:0;padding:0;"><cfinclude template="_statusFilter.cfm"></div>
+	<div id="gridboxSTATUS" style="width:99%;height:85%;overflow:auto;"></div>
+</div>
+<div id="right" class="winblue">
+	<div id="subView" class="container" style="overflow:auto">
+		<div class="winhead"><strong>Dettaglio Cliente</strong></div>
+		<div id="subHeader" style="height:15px"></div>
+		<div id="infoCliente" style="height:40px;"></div>
+		<!--- intestazione Form di aggiornamento / modifica evento --->
+		<!--- form per l'aggiornamento/inserimento di un nuovo evento --->
+		<div id="addProcesso" style="overflow:auto" class="subheader">
+		<cfinclude template="_statusCliente.cfm">
+		</div>
+	</div>
+		<!--- grid della cronologia eventi dello status per cliente specifico --->
+</div>
+<div id="rightBottom">
+	<div id="gridboxCLIENTE" style="height:100%;height:250px;display:;"></div>
+</div>
+
+<div id="w1" class="wiblue" style="position: relative; height: 100%; border: #cecece 1px solid; margin: 10px;display:none"><cfinclude template="_statusDocsUpload.cfm"></div>
+<cfinclude template="_statusQualifica.cfm">
+
+<cfwindow width="600" height="450" 
+        name="moduloWin" title="Modulo" 
+		center="true"
+        initshow="false" 
+		draggable="true" 
+		resizable="true" 
+		closable="false" 
+        source="_statusModulo.cfm?text={processoFrm:ac_modulo}"/>
+
+
+<cfoutput>
+<script>
+function date_custom(a,b,order){ 
+		alert (a);
+            a=a.split("/")
+            b=b.split("/")
+            if (a[2]==b[2]){
+                if (a[1]==b[1])
+                    return (a[0]>b[0]?1:-1)*(order=="asc"?1:-1);
+                else
+                    return (a[1]>b[1]?1:-1)*(order=="asc"?1:-1);
+            } else
+                 return (a[2]>b[2]?1:-1)*(order=="asc"?1:-1);
+        }
+
+//inizializza la grid status
+mygrid = new dhtmlXGridObject('gridboxSTATUS');
+mygrid.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
+<cfif session.livello NEQ 3 OR StructFind(session.userlogin,"gruppi_controllo") NEQ "">
+	mygrid.setHeader("&raquo;,Cliente,Agente,Città,Data,Azione,&raquo;");//set column names
+<cfelse>
+	mygrid.setHeader("&raquo;,Cliente,Indirizzo,Città,Data,Azione,&raquo;");//set column names	
+</cfif>
+mygrid.setInitWidths("25,150,100,100,70,*,*");//set column width in px
+mygrid.setColAlign("left,left,left,left,left,left,left");//set column values align
+mygrid.setColTypes("img,ro,ro,ro,ro,ro,img");//set column types
+//mygrid.setColSorting("img,str,str,str,date_custom,str,str,str");//set sorting
+//mygrid.attachEvent("onSelectStateChanged", statusCliente);
+mygrid.enableResizing("false,false,false,false,false,false,false");
+mygrid.attachEvent("onRowSelect" , statusCliente );
+mygrid.init();//initialize grid
+mygrid.setSkin("dhx_skyblue");//set grid skin
+<cfif IsDefined("url.idcliente") IS FALSE>
+	mygrid.load("_statusXML.cfm");
+<cfelse>
+	mygrid.load("_statusXML.cfm?idcliente=#url.idcliente#");
+	//setValore("searchValue","#url.cognome#");
+</cfif>
+mygrid.attachEvent("onXLE", doOnRebuild);
+
+//inizializza la grid della cronologia eventi di un cliente
+mygrid2 = new dhtmlXGridObject('gridboxCLIENTE');
+mygrid2.setImagePath("../include/dhtmlx/dhtmlxgrid/codebase/imgs/");//path to images required by grid
+mygrid2.setHeader("Data,Ora,Azione,id");//set column names
+mygrid2.setInitWidths("80,45,*,1");//set column width in px
+mygrid2.setColAlign("left,left,left,left");//set column values align
+mygrid2.setColTypes("ro,ro,ro,ro");//set column types
+mygrid2.setColSorting("str,str,str,str");//set sorting
+mygrid2.attachEvent("onSelectStateChanged", getDataStatus);
+mygrid2.attachEvent("onRowDblClicked", getDataStatus);  
+mygrid2.init();//initialize grid
+mygrid2.setSkin("dhx_skyblue");//set grid skin
+
+
+var dhxWins , w1;
+dhxWins = new dhtmlXWindows();
+	dhxWins.enableAutoViewport(true);
+    dhxWins.attachViewportTo("w1");
+    dhxWins.setImagePath("../include/dhtmlx/dhtmlxwindows/codebase/imgs/");
+
+	
+var aProcesso_Gerarchia = new Array();	
+<cfset np = 0>
+<cfloop query="myProcessi">
+	<cfif StructFind(session.userlogin,"livello") GT 0>
+		<cfset permission = ListGetAt(ac_permissions,livello)>
+		<cfif permission EQ 1 AND bl_insert EQ 1>
+			aProcesso_Gerarchia[#np#] = "#int_gerarchia#";
+			<cfset np = np + 1>
+		</cfif>
+	<cfelse>	
+		aProcesso_Gerarchia[#np#] = "#int_gerarchia#";
+		<cfset np = np + 1>
+	</cfif>
+</cfloop>	
+	
+var aProcesso_Tipo = new Array();	
+<cfset np = 0>
+<cfloop query="myProcessi">
+	<cfif StructFind(session.userlogin,"livello") GT 0>
+		<cfset permission = ListGetAt(ac_permissions,livello)>
+		<cfif permission EQ 1 AND bl_insert EQ 1>
+			aProcesso_Tipo[#np#] = "#int_tipo#";
+			<cfset np = np + 1>
+		</cfif>
+	<cfelse>	
+		aProcesso_Tipo[#np#] = "#int_tipo#";
+		<cfset np = np + 1>
+	</cfif>
+</cfloop>
+
+
+var aProcesso_Timer = new Array();	
+<cfset np = 0>
+<cfloop query="myProcessi">
+	<cfif StructFind(session.userlogin,"livello") GT 0>
+		<cfset permission = ListGetAt(ac_permissions,livello)>
+		<cfif permission EQ 1 AND bl_insert EQ 1>
+			aProcesso_Timer[#np#] = "#int_timer_limit#";
+			<cfset np = np + 1>
+		</cfif>
+	<cfelse>	
+		aProcesso_Timer[#np#] = "#int_timer_limit#";
+		<cfset np = np + 1>
+	</cfif>
+</cfloop>
+
+	
+var aModuli = new Array();
+<cfset np = 0>
+<cfloop query="myProcessi">
+	<cfif StructFind(session.userlogin,"livello") GT 0>
+		<cfset permission = ListGetAt(ac_permissions,livello)>
+		<cfif permission EQ 1 AND bl_insert EQ 1>
+			aModuli[#np#] = "#ac_modulo#";
+			<cfset np = np + 1>
+		</cfif>
+	<cfelse>	
+		aModuli[#np#] = "#ac_modulo#";
+		<cfset np = np + 1>
+	</cfif>
+</cfloop>
+
+var aValore = new Array();
+<cfset np = 0>
+<cfloop query="myProcessi">
+	<cfif StructFind(session.userlogin,"livello") GT 0>
+		<cfset permission = ListGetAt(ac_permissions,livello)>
+		<cfif permission EQ 1 AND bl_insert EQ 1>
+			aValore[#np#] = #int_tipo#;
+			<cfset np = np + 1>
+		</cfif>
+	<cfelse>	
+		aValore[#np#] = #int_tipo#;
+		<cfset np = np + 1>
+	</cfif>
+</cfloop>
+
+
+var aDocumenti = new Array();
+<cfset np = 0>
+<cfloop query="myProcessi">
+	<cfif StructFind(session.userlogin,"livello") GT 0>
+		<cfset permission = ListGetAt(ac_permissions,livello)>
+		<cfif permission EQ 1 AND bl_insert EQ 1>
+			aDocumenti[#np#] = #bl_documento#;
+			<cfset np = np + 1>
+		</cfif>
+	<cfelse>	
+		aDocumenti[#np#] = #bl_documento#;
+		<cfset np = np + 1>
+	</cfif>
+</cfloop>
+
+</script>
+</cfoutput>
